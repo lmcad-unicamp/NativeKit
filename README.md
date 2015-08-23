@@ -1,4 +1,4 @@
-[![GNU GPL v3.0](http://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl.html)
+[![GNU LGPL v3.0](http://www.gnu.org/graphics/lgplv3-88x31.png)](http://www.gnu.org/licenses/lgpl.html)
 
 ### About
 <p style="text-indent: 2em;" align="justify">
@@ -58,4 +58,4 @@ make run
 ```
 
 ### Documentation
-#coming soon...
+coming soon...
