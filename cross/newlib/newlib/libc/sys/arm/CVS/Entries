@@ -1,0 +1,13 @@
+/Makefile.am/1.9/Wed Aug 19 20:04:43 2009/-ko/
+/Makefile.in/1.24/Thu Dec 20 21:10:09 2012/-ko/
+/aclocal.m4/1.27/Thu Dec 20 21:10:09 2012/-ko/
+/aeabi_atexit.c/1.1/Wed Aug 31 20:39:43 2005//
+/arm.h/1.1/Mon Oct 10 13:00:25 2011//
+/configure/1.33/Mon Dec 23 20:45:06 2013/-ko/
+/configure.in/1.2/Thu Apr 13 19:56:27 2006/-ko/
+/crt0.S/1.16/Mon Aug 12 11:28:28 2013/-ko/
+/libcfunc.c/1.4/Fri Jul 19 09:57:51 2013/-ko/
+/swi.h/1.4/Fri Jul 19 09:57:51 2013/-ko/
+/syscalls.c/1.17/Tue Feb 11 19:54:30 2014/-ko/
+/trap.S/1.2/Tue Feb  7 18:44:54 2006/-ko/
+D

@@ -1,0 +1,1424 @@
+!_TAG_FILE_FORMAT	2	/extended format; --f
+A	emu/nativeemu/nativeemu.cpp	/^    u8 A=0,X=0,Y=0,S=0;$/;"	m	namespace:CPU	file:
+A	emu/nesemu.cc	/^    u8 A=0,X=0,Y=0,S=0;$/;"	m	namespace:CPU	file:
+AFLAGS	makefile	/^AFLAGS=-felf$/;"	m
+ALIGNMENT	src/arch/mem.s	/^ALIGNMENT     TIMES 4096 - ($-$$) DB 0$/;"	l
+ALIGNMENT_CHECK	inc/arch/arch.h	/^		ALIGNMENT_CHECK = 17,$/;"	e	enum:SSID
+APU	emu/nativeemu/nativeemu.cpp	/^namespace APU \/* Audio Processing Unit *\/$/;"	n	file:
+APU	emu/nesemu.cc	/^namespace APU \/* Audio Processing Unit *\/$/;"	n	file:
+ARCH_H	inc/arch/arch.h	22;"	d
+AS	makefile	/^AS=nasm$/;"	m
+ASCII_ACK	inc/device/video.h	32;"	d
+ASCII_BEL	inc/device/video.h	33;"	d
+ASCII_BS	inc/device/video.h	34;"	d
+ASCII_CAN	inc/device/video.h	50;"	d
+ASCII_CR	inc/device/video.h	39;"	d
+ASCII_DC1	inc/device/video.h	43;"	d
+ASCII_DC2	inc/device/video.h	44;"	d
+ASCII_DC3	inc/device/video.h	45;"	d
+ASCII_DC4	inc/device/video.h	46;"	d
+ASCII_DEL	inc/device/video.h	59;"	d
+ASCII_DLE	inc/device/video.h	42;"	d
+ASCII_EM	inc/device/video.h	51;"	d
+ASCII_ENQ	inc/device/video.h	31;"	d
+ASCII_EOT	inc/device/video.h	30;"	d
+ASCII_ESC	inc/device/video.h	53;"	d
+ASCII_ETB	inc/device/video.h	49;"	d
+ASCII_ETX	inc/device/video.h	29;"	d
+ASCII_FF	inc/device/video.h	38;"	d
+ASCII_FS	inc/device/video.h	54;"	d
+ASCII_GS	inc/device/video.h	55;"	d
+ASCII_NAK	inc/device/video.h	47;"	d
+ASCII_NL	inc/device/video.h	36;"	d
+ASCII_NUL	inc/device/video.h	26;"	d
+ASCII_RS	inc/device/video.h	56;"	d
+ASCII_SI	inc/device/video.h	41;"	d
+ASCII_SO	inc/device/video.h	40;"	d
+ASCII_SOH	inc/device/video.h	27;"	d
+ASCII_SP	inc/device/video.h	58;"	d
+ASCII_STX	inc/device/video.h	28;"	d
+ASCII_SUB	inc/device/video.h	52;"	d
+ASCII_SYN	inc/device/video.h	48;"	d
+ASCII_TAB	inc/device/video.h	35;"	d
+ASCII_US	inc/device/video.h	57;"	d
+ASCII_VT	inc/device/video.h	37;"	d
+AUXILIARY_FLAG	src/arch/debug.s	/^AUXILIARY_FLAG              EQU 1 << 4$/;"	d
+Access	emu/nativeemu/nativeemu.cpp	/^    u8 Access(u16 index, u8 v, bool write)$/;"	f	namespace:PPU
+Access	emu/nativeemu/nativeemu.cpp	/^    u8 Access(unsigned addr, u8 value, bool write)$/;"	f	namespace:GamePak
+Access	emu/nesemu.cc	/^    u8 Access(u16 index, u8 v, bool write)$/;"	f	namespace:PPU
+Access	emu/nesemu.cc	/^    u8 Access(unsigned addr, u8 value, bool write)$/;"	f	namespace:GamePak
+BGaddr	emu/nativeemu/nativeemu.cpp	/^        RegBit<4,1,u32> BGaddr;     RegBit<11,1,u32> ShowBG;    \/\/ Reg3 (write)$/;"	m	union:PPU::regtype	file:
+BGaddr	emu/nesemu.cc	/^        RegBit<4,1,u32> BGaddr;     RegBit<11,1,u32> ShowBG;    \/\/ Reg3 (write)$/;"	m	union:PPU::regtype	file:
+BIOS_EXTENSION_ADDR	src/arch/bios.s	/^BIOS_EXTENSION_ADDR EQU 0x7C00$/;"	d
+BIOS_MANAGER_END	src/arch/bios.s	/^BIOS_MANAGER_END:$/;"	l
+BIOS_MANAGER_START	src/arch/bios.s	/^BIOS_MANAGER_START:$/;"	l
+BLACK	inc/device/video.h	/^			BLACK,$/;"	e	enum:Video::tColor
+BLUE	inc/device/video.h	/^			BLUE,$/;"	e	enum:Video::tColor
+BOUNDS_CHECK_EXCEPTION	inc/arch/arch.h	/^		BOUNDS_CHECK_EXCEPTION = 5,$/;"	e	enum:SSID
+BREAKPOINT_EXCEPTION	inc/arch/arch.h	/^		BREAKPOINT_EXCEPTION = 3,$/;"	e	enum:SSID
+BaseNTA	emu/nativeemu/nativeemu.cpp	/^        RegBit<0,2,u32> BaseNTA;    RegBit< 8,1,u32> Grayscale; RegBit<21,1,u32> SPoverflow;$/;"	m	union:PPU::regtype	file:
+BaseNTA	emu/nesemu.cc	/^        RegBit<0,2,u32> BaseNTA;    RegBit< 8,1,u32> Grayscale; RegBit<21,1,u32> SPoverflow;$/;"	m	union:PPU::regtype	file:
+C	emu/nativeemu/nativeemu.cpp	/^        RegBit<0> C; \/\/ carry$/;"	m	union:CPU::__anon5	file:
+C	emu/nesemu.cc	/^        RegBit<0> C; \/\/ carry$/;"	m	union:CPU::__anon5	file:
+CALL	lib/ktest/ktest.h	74;"	d
+CALL	test/ktest.h	54;"	d
+CARRY_FLAG	src/arch/debug.s	/^CARRY_FLAG                  EQU 1 << 0$/;"	d
+CC	makefile	/^CC=i686-elf-g++$/;"	m
+CFLAGS	makefile	/^CFLAGS=-std=c++0x -O3 -Wall -nostdlib -fno-exceptions -fno-rtti -DDEBUG=0$/;"	m
+CMOS_REAL_TIMER	inc/arch/arch.h	/^		CMOS_REAL_TIMER = 40,$/;"	e	enum:SSID
+COM1	inc/device/uart.h	26;"	d
+COM2	inc/device/uart.h	27;"	d
+COM3	inc/device/uart.h	28;"	d
+COM4	inc/device/uart.h	29;"	d
+CONCAT	inc/util/debug.h	28;"	d
+COPROCESSOR_ERROR	inc/arch/arch.h	/^		COPROCESSOR_ERROR = 16,$/;"	e	enum:SSID
+COPROCESSOR_NOT_AVAILABLE_EXCEPTION	inc/arch/arch.h	/^		COPROCESSOR_NOT_AVAILABLE_EXCEPTION = 7,$/;"	e	enum:SSID
+COPROCESSOR_SEGMENT_OVERRUN_EXCEPTION	inc/arch/arch.h	/^		COPROCESSOR_SEGMENT_OVERRUN_EXCEPTION = 9,$/;"	e	enum:SSID
+CORE_H	inc/core.h	22;"	d
+CPU	emu/nativeemu/nativeemu.cpp	/^namespace CPU \/* CPU: Ricoh RP2A03 (based on MOS6502, almost the same as in Commodore 64) *\/$/;"	n	file:
+CPU	emu/nativeemu/nativeemu.cpp	/^namespace CPU$/;"	n	file:
+CPU	emu/nesemu.cc	/^namespace CPU \/* CPU: Ricoh RP2A03 (based on MOS6502, almost the same as in Commodore 64) *\/$/;"	n	file:
+CPU	emu/nesemu.cc	/^namespace CPU$/;"	n	file:
+CYAN	inc/device/video.h	/^			CYAN,$/;"	e	enum:Video::tColor
+ChannelsEnabled	emu/nativeemu/nativeemu.cpp	/^    bool FiveCycleDivider = false, IRQdisable = true, ChannelsEnabled[5] = { false };$/;"	m	namespace:APU	file:
+ChannelsEnabled	emu/nesemu.cc	/^    bool FiveCycleDivider = false, IRQdisable = true, ChannelsEnabled[5] = { false };$/;"	m	namespace:APU	file:
+D	emu/nativeemu/nativeemu.cpp	/^        RegBit<3> D; \/\/ decimal mode (unsupported on NES, but flag exists)$/;"	m	union:CPU::__anon5	file:
+D	emu/nesemu.cc	/^        RegBit<3> D; \/\/ decimal mode (unsupported on NES, but flag exists)$/;"	m	union:CPU::__anon5	file:
+DARKBLUE	inc/device/video.h	/^			DARKBLUE,$/;"	e	enum:Video::tColor
+DARKCYAN	inc/device/video.h	/^			DARKCYAN,$/;"	e	enum:Video::tColor
+DARKGREEN	inc/device/video.h	/^			DARKGREEN,$/;"	e	enum:Video::tColor
+DARKGREY	inc/device/video.h	/^			DARKGREY,$/;"	e	enum:Video::tColor
+DARKMAGENTA	inc/device/video.h	/^			DARKMAGENTA,$/;"	e	enum:Video::tColor
+DARKRED	inc/device/video.h	/^			DARKRED,$/;"	e	enum:Video::tColor
+DARKYELLOW	inc/device/video.h	/^			DARKYELLOW,$/;"	e	enum:Video::tColor
+DEBUG	inc/util/debug.h	25;"	d
+DEBUG_BGCOLOR	src/arch/debug.s	/^DEBUG_BGCOLOR               EQU 00000000b ;4 bits de cor para o fundo$/;"	d
+DEBUG_EXCEPTIONS	inc/arch/arch.h	/^		DEBUG_EXCEPTIONS = 1,$/;"	e	enum:SSID
+DEBUG_H	inc/util/debug.h	22;"	d
+DEBUG_MODE	src/arch/debug.s	/^DEBUG_MODE                  EQU 1$/;"	d
+DEBUG_NUMBER_OF_BREAKPOINTS	src/arch/debug.s	/^DEBUG_NUMBER_OF_BREAKPOINTS EQU 0$/;"	d
+DEBUG_TEXTCOLOR	src/arch/debug.s	/^DEBUG_TEXTCOLOR             EQU 00001111b ;4 bits de cor para o texto$/;"	d
+DEFAULT_ISR_SIZE	src/arch/isr.s	/^DEFAULT_ISR_SIZE EQU isr.l1  - isr.l0$/;"	d
+DEVICE_H	inc/device/device.h	22;"	d
+DIRECTION_FLAG	src/arch/debug.s	/^DIRECTION_FLAG              EQU 1 << 10$/;"	d
+DISKIMG	makefile	/^DISKIMG   :=$(OBJDIR)\/disk.img$/;"	m
+DISKMAKER	makefile	/^DISKMAKER :=$(OBJDIR)\/diskmaker.out$/;"	m
+DIVIDE_ERROR	inc/arch/arch.h	/^		DIVIDE_ERROR = 0,$/;"	e	enum:SSID
+DLINKEDLIST_H	inc/util/dlinkedlist.h	22;"	d
+DLinkedList	inc/util/dlinkedlist.h	/^		DLinkedList() : current(0), size(0) {$/;"	f	class:DLinkedList
+DLinkedList	inc/util/dlinkedlist.h	/^	template <class T> class DLinkedList {$/;"	c
+DMAKER_MODULES	makefile	/^DMAKER_MODULES :=util\/diskmaker\/diskmaker.cpp util\/diskmaker\/native_arch.c *\/*\/device.cpp *\/*\/inputdevice.cpp *\/*\/outputdevice.cpp *\/ilistener.cpp *\/*\/manager.cpp *\/*\/nfsii.cpp *\/*\/storage.cpp *\/*\/filesystem.cpp$/;"	m
+DMC_IRQ	emu/nativeemu/nativeemu.cpp	/^    bool PeriodicIRQ = false, DMC_IRQ = false;$/;"	m	namespace:APU	file:
+DMC_IRQ	emu/nesemu.cc	/^    bool PeriodicIRQ = false, DMC_IRQ = false;$/;"	m	namespace:APU	file:
+DMCperiods	emu/nativeemu/nativeemu.cpp	/^    static const u16 DMCperiods[16] = { 428,380,340,320,286,254,226,214,190,160,142,128,106,84,72,54 };$/;"	m	namespace:APU	file:
+DMCperiods	emu/nesemu.cc	/^    static const u16 DMCperiods[16] = { 428,380,340,320,286,254,226,214,190,160,142,128,106,84,72,54 };$/;"	m	namespace:APU	file:
+DOUBLE_FAULT_EXCEPTION	inc/arch/arch.h	/^		DOUBLE_FAULT_EXCEPTION = 8,$/;"	e	enum:SSID
+Device	inc/device/device.h	/^	class Device : public InterruptionListener {$/;"	c
+DutyCycle	emu/nativeemu/nativeemu.cpp	/^            RegBit<6,2,u32> DutyCycle;            RegBit< 8,3,u32> SweepShift;    RegBit<16,4,u32> NoiseFreq;$/;"	m	union:APU::channel::__anon3	file:
+DutyCycle	emu/nesemu.cc	/^            RegBit<6,2,u32> DutyCycle;            RegBit< 8,3,u32> SweepShift;    RegBit<16,4,u32> NoiseFreq;$/;"	m	union:APU::channel::__anon3	file:
+ELF	src/manager/system.cpp	/^	ELF ( FileSystem &fs, fid_t fd ) : fs(fs), fd(fd) {$/;"	f	class:ELF
+ELF	src/manager/system.cpp	/^class ELF {$/;"	c	file:
+END	lib/ktest/ktest.h	67;"	d
+END	test/ktest.h	47;"	d
+EOF	test/syscalls.test.cpp	/^	REQUIRE( fgetc( fp ) == EOF );$/;"	v
+EOF	test/test.cpp	/^	REQUIRE( fgetc(fp) == EOF );$/;"	v
+EmpRGB	emu/nativeemu/nativeemu.cpp	/^        RegBit<7,1,u32> NMIenabled; RegBit<13,3,u32> EmpRGB;    RegBit<26,6,u32> OAMindex;$/;"	m	union:PPU::regtype	file:
+EmpRGB	emu/nesemu.cc	/^        RegBit<7,1,u32> NMIenabled; RegBit<13,3,u32> EmpRGB;    RegBit<26,6,u32> OAMindex;$/;"	m	union:PPU::regtype	file:
+EnvDecayDisable	emu/nativeemu/nativeemu.cpp	/^            RegBit<4,1,u32> EnvDecayDisable;      RegBit<11,1,u32> SweepDecrease; RegBit<23,1,u32> NoiseType;$/;"	m	union:APU::channel::__anon3	file:
+EnvDecayDisable	emu/nesemu.cc	/^            RegBit<4,1,u32> EnvDecayDisable;      RegBit<11,1,u32> SweepDecrease; RegBit<23,1,u32> NoiseType;$/;"	m	union:APU::channel::__anon3	file:
+EnvDecayLoopEnable	emu/nativeemu/nativeemu.cpp	/^            RegBit<5,1,u32> EnvDecayLoopEnable;   RegBit<15,1,u32> SweepEnable;   \/\/ 4003, 4007, 400B, 400F, 4010:$/;"	m	union:APU::channel::__anon3	file:
+EnvDecayLoopEnable	emu/nesemu.cc	/^            RegBit<5,1,u32> EnvDecayLoopEnable;   RegBit<15,1,u32> SweepEnable;   \/\/ 4003, 4007, 400B, 400F, 4010:$/;"	m	union:APU::channel::__anon3	file:
+EnvDecayRate	emu/nativeemu/nativeemu.cpp	/^            RegBit<0,4,u32> EnvDecayRate;         RegBit<12,3,u32> SweepRate;     RegBit<16,11,u32> WaveLength;$/;"	m	union:APU::channel::__anon3	file:
+EnvDecayRate	emu/nesemu.cc	/^            RegBit<0,4,u32> EnvDecayRate;         RegBit<12,3,u32> SweepRate;     RegBit<16,11,u32> WaveLength;$/;"	m	union:APU::channel::__anon3	file:
+FILESYSTEM_H	inc/manager/filesystem.h	22;"	d
+FILE_H	inc/manager/file.h	22;"	d
+FILE_TABLE_DEFAULT_CAPACITY	inc/manager/file.h	100;"	d
+FLOPPY_DISK_DRIVE	inc/arch/arch.h	/^		FLOPPY_DISK_DRIVE = 38,$/;"	e	enum:SSID
+FORMAT	inc/util/debug.h	32;"	d
+FS_DIRECTORY	inc/manager/nfsii.h	/^				FS_DIRECTORY,$/;"	e	enum:NFSII::NodeType
+FS_FILE	inc/manager/nfsii.h	/^				FS_FILE,$/;"	e	enum:NFSII::NodeType
+FS_FREE	inc/manager/nfsii.h	/^				FS_FREE,$/;"	e	enum:NFSII::NodeType
+FS_INFO	inc/manager/nfsii.h	/^				FS_INFO,$/;"	e	enum:NFSII::NodeType
+FS_INVALID	inc/manager/nfsii.h	/^				FS_INVALID$/;"	e	enum:NFSII::NodeType
+File	inc/manager/file.h	/^		File( Storage &storage, lba_t position, int displacement, size_t size, size_t capacity ) :$/;"	f	class:File
+File	inc/manager/file.h	/^	class File {$/;"	c
+FileSystem	inc/manager/filesystem.h	/^class FileSystem {$/;"	c
+FileSystem	src/manager/filesystem.cpp	/^FileSystem::FileSystem( Storage &storage ) : storage( storage ) {$/;"	f	class:FileSystem
+FileTable	inc/manager/file.h	/^		FileTable( const size_t capacity = FILE_TABLE_DEFAULT_CAPACITY ) : capacity(capacity) {$/;"	f	class:FileTable
+FileTable	inc/manager/file.h	/^	class FileTable {$/;"	c
+FiveCycleDivider	emu/nativeemu/nativeemu.cpp	/^    bool FiveCycleDivider = false, IRQdisable = true, ChannelsEnabled[5] = { false };$/;"	m	namespace:APU	file:
+FiveCycleDivider	emu/nesemu.cc	/^    bool FiveCycleDivider = false, IRQdisable = true, ChannelsEnabled[5] = { false };$/;"	m	namespace:APU	file:
+FixedVolume	emu/nativeemu/nativeemu.cpp	/^            RegBit<0,4,u32> FixedVolume;          RegBit< 8,8,u32> PCMlength;     RegBit<24,8,u32> reg3;$/;"	m	union:APU::channel::__anon3	file:
+FixedVolume	emu/nesemu.cc	/^            RegBit<0,4,u32> FixedVolume;          RegBit< 8,8,u32> PCMlength;     RegBit<24,8,u32> reg3;$/;"	m	union:APU::channel::__anon3	file:
+FlushScanline	emu/nativeemu/nativeemu.cpp	/^    void FlushScanline(unsigned py)$/;"	f	namespace:IO
+FlushScanline	emu/nesemu.cc	/^    void FlushScanline(unsigned py)$/;"	f	namespace:IO
+GDT	src/arch/gdt.s	/^GDT:$/;"	l
+GENERAL_PROTECTION_EXCEPTION	inc/arch/arch.h	/^		GENERAL_PROTECTION_EXCEPTION = 13,$/;"	e	enum:SSID
+GREEN	inc/device/video.h	/^			GREEN,$/;"	e	enum:Video::tColor
+GamePak	emu/nativeemu/nativeemu.cpp	/^namespace GamePak$/;"	n	file:
+GamePak	emu/nesemu.cc	/^namespace GamePak$/;"	n	file:
+Gerenciamento de arquivos	doc/fs.tex	/^\\section{Gerenciamento de arquivos}$/;"	s
+Gerenciamento de mem   ria	doc/mm.tex	/^\\section{Gerenciamento de memória}$/;"	s
+Grayscale	emu/nativeemu/nativeemu.cpp	/^        RegBit<0,2,u32> BaseNTA;    RegBit< 8,1,u32> Grayscale; RegBit<21,1,u32> SPoverflow;$/;"	m	union:PPU::regtype	file:
+Grayscale	emu/nesemu.cc	/^        RegBit<0,2,u32> BaseNTA;    RegBit< 8,1,u32> Grayscale; RegBit<21,1,u32> SPoverflow;$/;"	m	union:PPU::regtype	file:
+HARD_DISK_DRIVE_M	inc/arch/arch.h	/^		HARD_DISK_DRIVE_M = 46,$/;"	e	enum:SSID
+HARD_DISK_DRIVE_S	inc/arch/arch.h	/^		HARD_DISK_DRIVE_S = 47,$/;"	e	enum:SSID
+I	emu/nativeemu/nativeemu.cpp	/^        RegBit<2> I; \/\/ interrupt enable\/disable$/;"	m	union:CPU::__anon5	file:
+I	emu/nesemu.cc	/^        RegBit<2> I; \/\/ interrupt enable\/disable$/;"	m	union:CPU::__anon5	file:
+IDT	src/arch/idt.s	/^IDT:$/;"	l
+IDT_REAL_MODE	src/arch/16BitsInterruptColler.s	/^IDT_REAL_MODE:$/;"	l
+ILISTENER_H	inc/ilistener.h	22;"	d
+INCLUDE	makefile	/^INCLUDE=-I inc\/ -I inc\/arch\/ -I inc\/device\/ -I inc\/util\/ -I inc\/manager -I test\/ -I lib\/ktest\/$/;"	m
+INPUT_H	inc/device/inputdevice.h	22;"	d
+INTERRUPT	src/arch/16BitsInterruptColler.s	/^	INTERRUPT:$/;"	l
+INTERRUPT_FLAG	src/arch/debug.s	/^INTERRUPT_FLAG              EQU 1 << 9$/;"	d
+INVALID	inc/arch/arch.h	/^		INVALID = 129$/;"	e	enum:SSID
+INVALID_OPCODE_EXCEPTION	inc/arch/arch.h	/^		INVALID_OPCODE_EXCEPTION = 6,$/;"	e	enum:SSID
+INVALID_TSS_EXCEPTION	inc/arch/arch.h	/^		INVALID_TSS_EXCEPTION = 10,$/;"	e	enum:SSID
+IO	emu/nativeemu/nativeemu.cpp	/^namespace IO$/;"	n	file:
+IO	emu/nesemu.cc	/^namespace IO$/;"	n	file:
+IODEVICE_H	inc/device/iodevice.h	22;"	d
+IODevice	inc/device/iodevice.h	/^	class IODevice : public InputDevice, public OutputDevice {$/;"	c
+IRQdisable	emu/nativeemu/nativeemu.cpp	/^    bool FiveCycleDivider = false, IRQdisable = true, ChannelsEnabled[5] = { false };$/;"	m	namespace:APU	file:
+IRQdisable	emu/nesemu.cc	/^    bool FiveCycleDivider = false, IRQdisable = true, ChannelsEnabled[5] = { false };$/;"	m	namespace:APU	file:
+IRQenable	emu/nativeemu/nativeemu.cpp	/^            RegBit<7,1,u32> LinearCounterDisable;                                 RegBit<31,1,u32> IRQenable;$/;"	m	union:APU::channel::__anon3	file:
+IRQenable	emu/nesemu.cc	/^            RegBit<7,1,u32> LinearCounterDisable;                                 RegBit<31,1,u32> IRQenable;$/;"	m	union:APU::channel::__anon3	file:
+ISODIR	makefile	/^ISODIR=$(OBJDIR)\/iso$/;"	m
+Implementa     o	doc/mm.tex	/^\\subsection{Implementação}$/;"	u
+InVBlank	emu/nativeemu/nativeemu.cpp	/^        RegBit<3,1,u32> SPaddr;     RegBit<10,1,u32> ShowSP8;   RegBit<23,1,u32> InVBlank;$/;"	m	union:PPU::regtype	file:
+InVBlank	emu/nesemu.cc	/^        RegBit<3,1,u32> SPaddr;     RegBit<10,1,u32> ShowSP8;   RegBit<23,1,u32> InVBlank;$/;"	m	union:PPU::regtype	file:
+Inc	emu/nativeemu/nativeemu.cpp	/^        RegBit<2,1,u32> Inc;        RegBit< 9,1,u32> ShowBG8;   RegBit<22,1,u32> SP0hit;$/;"	m	union:PPU::regtype	file:
+Inc	emu/nesemu.cc	/^        RegBit<2,1,u32> Inc;        RegBit< 9,1,u32> ShowBG8;   RegBit<22,1,u32> SP0hit;$/;"	m	union:PPU::regtype	file:
+Init	emu/nativeemu/nativeemu.cpp	/^    void Init()$/;"	f	namespace:GamePak
+Init	emu/nativeemu/nativeemu.cpp	/^    void Init()$/;"	f	namespace:IO
+Init	emu/nesemu.cc	/^    void Init()$/;"	f	namespace:GamePak
+Init	emu/nesemu.cc	/^    void Init()$/;"	f	namespace:IO
+InputDevice	inc/device/inputdevice.h	/^	class InputDevice : public virtual Device {$/;"	c
+Ins	emu/nativeemu/nativeemu.cpp	/^    void Ins()       \/\/ With template magic, the compiler will literally synthesize >256 different functions.$/;"	f	namespace:CPU
+Ins	emu/nesemu.cc	/^    void Ins()       \/\/ With template magic, the compiler will literally synthesize >256 different functions.$/;"	f	namespace:CPU
+InterruptionListener	inc/ilistener.h	/^	class InterruptionListener {$/;"	c
+JoyRead	emu/nativeemu/nativeemu.cpp	/^    u8 JoyRead(unsigned idx)$/;"	f	namespace:IO
+JoyRead	emu/nesemu.cc	/^    u8 JoyRead(unsigned idx)$/;"	f	namespace:IO
+JoyStrobe	emu/nativeemu/nativeemu.cpp	/^    void JoyStrobe(unsigned v)$/;"	f	namespace:IO
+JoyStrobe	emu/nesemu.cc	/^    void JoyStrobe(unsigned v)$/;"	f	namespace:IO
+KERNEL	makefile	/^KERNEL    :=$(OBJDIR)\/kernel.bin$/;"	m
+KERNEL_CODE	src/arch/gdt.s	/^	KERNEL_CODE  EQU $ - GDT  ; 32bits Protected Mode "Kernel Ring0"$/;"	d
+KERNEL_DATA	src/arch/gdt.s	/^	KERNEL_DATA  EQU $ - GDT  ; 32bits Protected Mode "Kernel Ring0"$/;"	d
+KERNEL_MODULES	makefile	/^KERNEL_MODULES :=$(addprefix $(OBJDIR)\/, arch.o crti.o crtbegin.o core.o debug.o device.o ilistener.o inputdevice.o kernel.o keyboard.o keybuffer.o manager.o memory.o storage.o nfsii.o filesystem.o outputdevice.o scheduler.o process.o posix.o system.o uart.o video.o disk.o brk.o close.o default.o execve.o exit.o fork.o fstat.o getpid.o gettimeofday.o kill.o link.o lseek.o newuname.o open.o read.o reboot.o stat.o times.o unlink.o wait.o write.o syscalls.o crtend.o crtn.o libstdc++.a libm.a libc.a libgcc.a )$/;"	m
+KEYBOARD	inc/arch/arch.h	/^		KEYBOARD = 33,$/;"	e	enum:SSID
+KEYBOARD_H	inc/device/keyboard.h	22;"	d
+KEYBUFFER_H	inc/util/keybuffer.h	22;"	d
+KEY_ALT	inc/device/keyboard.h	33;"	d
+KEY_ALTGR	inc/device/keyboard.h	57;"	d
+KEY_BACK_SPACE	inc/device/keyboard.h	28;"	d
+KEY_CAPS	inc/device/keyboard.h	47;"	d
+KEY_CTRL	inc/device/keyboard.h	55;"	d
+KEY_DELETE	inc/device/keyboard.h	53;"	d
+KEY_DOWN	inc/device/keyboard.h	64;"	d
+KEY_END	inc/device/keyboard.h	60;"	d
+KEY_ENTER	inc/device/keyboard.h	30;"	d
+KEY_ENTER	src/arch/debug.s	/^KEY_ENTER                   EQU 28$/;"	d
+KEY_ESC	inc/device/keyboard.h	27;"	d
+KEY_F1	inc/device/keyboard.h	35;"	d
+KEY_F10	inc/device/keyboard.h	44;"	d
+KEY_F11	inc/device/keyboard.h	45;"	d
+KEY_F12	inc/device/keyboard.h	46;"	d
+KEY_F2	inc/device/keyboard.h	36;"	d
+KEY_F3	inc/device/keyboard.h	37;"	d
+KEY_F4	inc/device/keyboard.h	38;"	d
+KEY_F5	inc/device/keyboard.h	39;"	d
+KEY_F6	inc/device/keyboard.h	40;"	d
+KEY_F7	inc/device/keyboard.h	41;"	d
+KEY_F8	inc/device/keyboard.h	42;"	d
+KEY_F9	inc/device/keyboard.h	43;"	d
+KEY_HOME	inc/device/keyboard.h	51;"	d
+KEY_INSERT	inc/device/keyboard.h	52;"	d
+KEY_LEFT	inc/device/keyboard.h	62;"	d
+KEY_NULL	inc/device/keyboard.h	50;"	d
+KEY_NUM_LOCK	inc/device/keyboard.h	48;"	d
+KEY_PAGE_DOWN	inc/device/keyboard.h	59;"	d
+KEY_PAGE_UP	inc/device/keyboard.h	58;"	d
+KEY_PAUSE_BREAK	inc/device/keyboard.h	54;"	d
+KEY_PRTSC	inc/device/keyboard.h	56;"	d
+KEY_RIGHT	inc/device/keyboard.h	63;"	d
+KEY_SCROLL_LOCK	inc/device/keyboard.h	49;"	d
+KEY_SHIFT_L	inc/device/keyboard.h	32;"	d
+KEY_SHIFT_R	inc/device/keyboard.h	31;"	d
+KEY_SPACE	inc/device/keyboard.h	34;"	d
+KEY_TAB	inc/device/keyboard.h	29;"	d
+KEY_UP	inc/device/keyboard.h	61;"	d
+KEY_WINDOW	inc/device/keyboard.h	65;"	d
+KEY_WINDOW2	inc/device/keyboard.h	66;"	d
+KTEST	makefile	/^KTEST     :=$(OBJDIR)\/test.bin$/;"	m
+KTEST_H	lib/ktest/ktest.h	22;"	d
+KTEST_H	test/ktest.h	2;"	d
+KTest	lib/ktest/ktest.cpp	/^KTest::KTest( const char* name ) : name(name) {$/;"	f	class:KTest
+KTest	lib/ktest/ktest.h	/^	class KTest {$/;"	c
+KTest	test/ktest.cpp	/^KTest::KTest( const char* name ) : name(name) {$/;"	f	class:KTest
+KTest	test/ktest.h	/^	class KTest {$/;"	c
+KeyBuffer	inc/util/keybuffer.h	/^			KeyBuffer() : size(0), begin(0), end(0) {$/;"	f	class:KeyBuffer
+KeyBuffer	inc/util/keybuffer.h	/^	class KeyBuffer {$/;"	c
+Keyboard	inc/device/keyboard.h	/^	class Keyboard : public InputDevice {$/;"	c
+LD	makefile	/^LD=i686-elf-ld$/;"	m
+LFLAGS	makefile	/^LFLAGS=$/;"	m
+LIBDIR	makefile	/^LIBDIR=lib$/;"	m
+LIGHTGREY	inc/device/video.h	/^			LIGHTGREY,$/;"	e	enum:Video::tColor
+LINUX_SYSCALL	inc/arch/arch.h	/^		LINUX_SYSCALL = 128,$/;"	e	enum:SSID
+LIVECD	makefile	/^LIVECD    :=$(OBJDIR)\/kernel.iso$/;"	m
+LPT_1	inc/arch/arch.h	/^		LPT_1 = 39,$/;"	e	enum:SSID
+LPT_2	inc/arch/arch.h	/^		LPT_2 = 37,$/;"	e	enum:SSID
+LengthCounterDisable	emu/nativeemu/nativeemu.cpp	/^            RegBit<5,1,u32> LengthCounterDisable;                                 RegBit<27,5,u32> LengthCounterInit;$/;"	m	union:APU::channel::__anon3	file:
+LengthCounterDisable	emu/nesemu.cc	/^            RegBit<5,1,u32> LengthCounterDisable;                                 RegBit<27,5,u32> LengthCounterInit;$/;"	m	union:APU::channel::__anon3	file:
+LengthCounterInit	emu/nativeemu/nativeemu.cpp	/^            RegBit<5,1,u32> LengthCounterDisable;                                 RegBit<27,5,u32> LengthCounterInit;$/;"	m	union:APU::channel::__anon3	file:
+LengthCounterInit	emu/nesemu.cc	/^            RegBit<5,1,u32> LengthCounterDisable;                                 RegBit<27,5,u32> LengthCounterInit;$/;"	m	union:APU::channel::__anon3	file:
+LengthCounters	emu/nativeemu/nativeemu.cpp	/^    static const u8 LengthCounters[32] = { 10,254,20, 2,40, 4,80, 6,160, 8,60,10,14,12,26,14,$/;"	m	namespace:APU	file:
+LengthCounters	emu/nesemu.cc	/^    static const u8 LengthCounters[32] = { 10,254,20, 2,40, 4,80, 6,160, 8,60,10,14,12,26,14,$/;"	m	namespace:APU	file:
+LinearCounterDisable	emu/nativeemu/nativeemu.cpp	/^            RegBit<7,1,u32> LinearCounterDisable;                                 RegBit<31,1,u32> IRQenable;$/;"	m	union:APU::channel::__anon3	file:
+LinearCounterDisable	emu/nesemu.cc	/^            RegBit<7,1,u32> LinearCounterDisable;                                 RegBit<31,1,u32> IRQenable;$/;"	m	union:APU::channel::__anon3	file:
+LinearCounterInit	emu/nativeemu/nativeemu.cpp	/^            RegBit<0,7,u32> LinearCounterInit;                                    RegBit<30,1,u32> LoopEnabled;$/;"	m	union:APU::channel::__anon3	file:
+LinearCounterInit	emu/nesemu.cc	/^            RegBit<0,7,u32> LinearCounterInit;                                    RegBit<30,1,u32> LoopEnabled;$/;"	m	union:APU::channel::__anon3	file:
+LoopEnabled	emu/nativeemu/nativeemu.cpp	/^            RegBit<0,7,u32> LinearCounterInit;                                    RegBit<30,1,u32> LoopEnabled;$/;"	m	union:APU::channel::__anon3	file:
+LoopEnabled	emu/nesemu.cc	/^            RegBit<0,7,u32> LinearCounterInit;                                    RegBit<30,1,u32> LoopEnabled;$/;"	m	union:APU::channel::__anon3	file:
+MACHINE_CHECK	inc/arch/arch.h	/^		MACHINE_CHECK = 18,$/;"	e	enum:SSID
+MAGENTA	inc/device/video.h	/^			MAGENTA,$/;"	e	enum:Video::tColor
+MANAGER_H	inc/manager/manager.h	22;"	d
+MASTER_ISR_SIZE	src/arch/isr.s	/^MASTER_ISR_SIZE  EQU isr.l33 - isr.l32$/;"	d
+MAX_BUFFER_SIZE	inc/util/keybuffer.h	23;"	d
+MAX_NUMBER_OF_TESTS	lib/ktest/ktest.h	52;"	d
+MAX_NUMBER_OF_TESTS	test/ktest.h	32;"	d
+MEMORY_H	inc/manager/memory.h	22;"	d
+MEMORY_HIGH_MEMORY_PTR	inc/manager/memory.h	29;"	d
+MEMORY_MINIMUM_REQUIREMENT	inc/manager/memory.h	30;"	d
+MEMORY_MMAP_SIZE	inc/manager/memory.h	27;"	d
+MEMORY_PAGE_SIZE	inc/manager/memory.h	28;"	d
+MODDIR	makefile	/^MODDIR=mod$/;"	m
+MOUSE	inc/arch/arch.h	/^		MOUSE = 44,$/;"	e	enum:SSID
+MULTIBOOT_MEMORY_AVAILABLE	inc/types.h	27;"	d
+MULTIBOOT_MEMORY_RESERVED	inc/types.h	28;"	d
+M_PI	emu/nativeemu/nativeemu.cpp	30;"	d	file:
+M_PI	emu/nesemu.cc	13;"	d	file:
+Manager	inc/manager/manager.h	/^	class Manager : public InterruptionListener {$/;"	c
+Mem   ria f   sica	doc/mm.tex	/^\\subsection{Memória física}$/;"	u
+Mem   ria virtual	doc/mm.tex	/^\\subsection{Memória virtual}$/;"	u
+MemAccess	emu/nativeemu/nativeemu.cpp	/^    template<bool write> u8 MemAccess(u16 addr, u8 v)$/;"	f	namespace:CPU
+MemAccess	emu/nesemu.cc	/^    template<bool write> u8 MemAccess(u16 addr, u8 v)$/;"	f	namespace:CPU
+Memory	inc/manager/memory.h	/^	class Memory : public Manager {$/;"	c
+Memory	src/manager/memory.cpp	/^Memory::Memory() : size(0), freeSize(0), reservedSize(0), blockList(0) {$/;"	f	class:Memory
+Misfire	emu/nativeemu/nativeemu.cpp	/^    void Misfire(u16 old, u16 addr) { u16 q = wrap(old, addr); if(q != addr) RB(q); }$/;"	f	namespace:CPU
+Misfire	emu/nesemu.cc	/^    void Misfire(u16 old, u16 addr) { u16 q = wrap(old, addr); if(q != addr) RB(q); }$/;"	f	namespace:CPU
+N	emu/nativeemu/nativeemu.cpp	/^        RegBit<7> N; \/\/ negative$/;"	m	union:CPU::__anon5	file:
+N	emu/nesemu.cc	/^        RegBit<7> N; \/\/ negative$/;"	m	union:CPU::__anon5	file:
+NEUTRINO_SYSCALL	inc/arch/arch.h	/^		NEUTRINO_SYSCALL = 49,$/;"	e	enum:SSID
+NEW_LINE	src/arch/debug.s	/^NEW_LINE                    EQU 0x0D$/;"	d
+NFSII	inc/manager/nfsii.h	/^	class NFSII : public FileSystem {$/;"	c
+NFSII	src/manager/nfsii.cpp	/^NFSII::NFSII( Storage &storage ) : FileSystem(storage) {$/;"	f	class:NFSII
+NFSII_H	inc/manager/nfsii.h	22;"	d
+NFS_DIRECTORY_LBA	inc/manager/nfsii.h	29;"	d
+NFS_FREE_NODE_LBA	inc/manager/nfsii.h	30;"	d
+NFS_NAME_LENGTH	inc/manager/nfsii.h	27;"	d
+NFS_ROOT_NODE_LBA	inc/manager/nfsii.h	28;"	d
+NFS_SIGNATURE	inc/manager/nfsii.h	26;"	d
+NLIB_H	inc/nlib.h	22;"	d
+NMIenabled	emu/nativeemu/nativeemu.cpp	/^        RegBit<7,1,u32> NMIenabled; RegBit<13,3,u32> EmpRGB;    RegBit<26,6,u32> OAMindex;$/;"	m	union:PPU::regtype	file:
+NMIenabled	emu/nesemu.cc	/^        RegBit<7,1,u32> NMIenabled; RegBit<13,3,u32> EmpRGB;    RegBit<26,6,u32> OAMindex;$/;"	m	union:PPU::regtype	file:
+NONMASKABLE_INTERRUPT_EXCEPTION	inc/arch/arch.h	/^		NONMASKABLE_INTERRUPT_EXCEPTION = 2,$/;"	e	enum:SSID
+NRAM	emu/nativeemu/nativeemu.cpp	/^    unsigned char NRAM[0x1000], PRAM[0x2000];$/;"	m	namespace:GamePak	file:
+NRAM	emu/nesemu.cc	/^    unsigned char NRAM[0x1000], PRAM[0x2000];$/;"	m	namespace:GamePak	file:
+NULL	src/arch/gdt.s	/^	NULL         EQU $ - GDT$/;"	d
+NUMBER_OF_ISR	inc/arch/arch.h	28;"	d
+NUMERIC_COPROCESSOR	inc/arch/arch.h	/^		NUMERIC_COPROCESSOR = 45,$/;"	e	enum:SSID
+NodeType	inc/manager/nfsii.h	/^			enum NodeType {$/;"	g	class:NFSII
+NoiseFreq	emu/nativeemu/nativeemu.cpp	/^            RegBit<6,2,u32> DutyCycle;            RegBit< 8,3,u32> SweepShift;    RegBit<16,4,u32> NoiseFreq;$/;"	m	union:APU::channel::__anon3	file:
+NoiseFreq	emu/nesemu.cc	/^            RegBit<6,2,u32> DutyCycle;            RegBit< 8,3,u32> SweepShift;    RegBit<16,4,u32> NoiseFreq;$/;"	m	union:APU::channel::__anon3	file:
+NoisePeriods	emu/nativeemu/nativeemu.cpp	/^    static const u16 NoisePeriods[16] = { 2,4,8,16,32,48,64,80,101,127,190,254,381,508,1017,2034 };$/;"	m	namespace:APU	file:
+NoisePeriods	emu/nesemu.cc	/^    static const u16 NoisePeriods[16] = { 2,4,8,16,32,48,64,80,101,127,190,254,381,508,1017,2034 };$/;"	m	namespace:APU	file:
+NoiseType	emu/nativeemu/nativeemu.cpp	/^            RegBit<4,1,u32> EnvDecayDisable;      RegBit<11,1,u32> SweepDecrease; RegBit<23,1,u32> NoiseType;$/;"	m	union:APU::channel::__anon3	file:
+NoiseType	emu/nesemu.cc	/^            RegBit<4,1,u32> EnvDecayDisable;      RegBit<11,1,u32> SweepDecrease; RegBit<23,1,u32> NoiseType;$/;"	m	union:APU::channel::__anon3	file:
+Nta	emu/nativeemu/nativeemu.cpp	/^    unsigned char *Nta[4] = { NRAM+0x0000, NRAM+0x0400, NRAM+0x0000, NRAM+0x0400 };$/;"	m	namespace:GamePak	file:
+Nta	emu/nesemu.cc	/^    unsigned char *Nta[4] = { NRAM+0x0000, NRAM+0x0400, NRAM+0x0000, NRAM+0x0400 };$/;"	m	namespace:GamePak	file:
+OAM	emu/nativeemu/nativeemu.cpp	/^    u8 palette[32], OAM[256];$/;"	m	namespace:PPU	file:
+OAM	emu/nesemu.cc	/^    u8 palette[32], OAM[256];$/;"	m	namespace:PPU	file:
+OAM2	emu/nativeemu/nativeemu.cpp	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	namespace:PPU	typeref:struct:PPU::__anon2	file:
+OAM2	emu/nesemu.cc	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	namespace:PPU	typeref:struct:PPU::__anon2	file:
+OAM3	emu/nativeemu/nativeemu.cpp	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	namespace:PPU	typeref:struct:PPU::__anon2	file:
+OAM3	emu/nesemu.cc	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	namespace:PPU	typeref:struct:PPU::__anon2	file:
+OAMaddr	emu/nativeemu/nativeemu.cpp	/^        RegBit<5,1,u32> SPsize;     RegBit<12,1,u32> ShowSP;    RegBit<24,8,u32> OAMaddr;$/;"	m	union:PPU::regtype	file:
+OAMaddr	emu/nesemu.cc	/^        RegBit<5,1,u32> SPsize;     RegBit<12,1,u32> ShowSP;    RegBit<24,8,u32> OAMaddr;$/;"	m	union:PPU::regtype	file:
+OAMdata	emu/nativeemu/nativeemu.cpp	/^        RegBit<6,1,u32> SlaveFlag;  RegBit<11,2,u32> ShowBGSP;  RegBit<24,2,u32> OAMdata;$/;"	m	union:PPU::regtype	file:
+OAMdata	emu/nesemu.cc	/^        RegBit<6,1,u32> SlaveFlag;  RegBit<11,2,u32> ShowBGSP;  RegBit<24,2,u32> OAMdata;$/;"	m	union:PPU::regtype	file:
+OAMindex	emu/nativeemu/nativeemu.cpp	/^        RegBit<7,1,u32> NMIenabled; RegBit<13,3,u32> EmpRGB;    RegBit<26,6,u32> OAMindex;$/;"	m	union:PPU::regtype	file:
+OAMindex	emu/nesemu.cc	/^        RegBit<7,1,u32> NMIenabled; RegBit<13,3,u32> EmpRGB;    RegBit<26,6,u32> OAMindex;$/;"	m	union:PPU::regtype	file:
+OBJDIR	makefile	/^OBJDIR=bin$/;"	m
+OPERATION_MODE	src/arch/debug.s	/^OPERATION_MODE              EQU DEBUG_MODE$/;"	d
+OUTPUT_H	inc/device/outputdevice.h	22;"	d
+OVERFLOW_EXCEPTION	inc/arch/arch.h	/^		OVERFLOW_EXCEPTION = 4,$/;"	e	enum:SSID
+OVERFLOW_FLAG	src/arch/debug.s	/^OVERFLOW_FLAG               EQU 1 << 11$/;"	d
+Op	emu/nativeemu/nativeemu.cpp	/^    void Op()$/;"	f	namespace:CPU
+Op	emu/nesemu.cc	/^    void Op()$/;"	f	namespace:CPU
+OutputDevice	inc/device/outputdevice.h	/^	class OutputDevice : public virtual Device {$/;"	c
+P	emu/nativeemu/nativeemu.cpp	/^    } P;$/;"	m	namespace:CPU	typeref:union:CPU::__anon5	file:
+P	emu/nesemu.cc	/^    } P;$/;"	m	namespace:CPU	typeref:union:CPU::__anon5	file:
+PAGE_FAULT_EXCEPTION	inc/arch/arch.h	/^		PAGE_FAULT_EXCEPTION = 14,$/;"	e	enum:SSID
+PARITY_FLAG	src/arch/debug.s	/^PARITY_FLAG                 EQU 1 << 2$/;"	d
+PC	emu/nativeemu/nativeemu.cpp	/^    u16 PC=0xC000;$/;"	m	namespace:CPU	file:
+PC	emu/nesemu.cc	/^    u16 PC=0xC000;$/;"	m	namespace:CPU	file:
+PCMlength	emu/nativeemu/nativeemu.cpp	/^            RegBit<0,4,u32> FixedVolume;          RegBit< 8,8,u32> PCMlength;     RegBit<24,8,u32> reg3;$/;"	m	union:APU::channel::__anon3	file:
+PCMlength	emu/nesemu.cc	/^            RegBit<0,4,u32> FixedVolume;          RegBit< 8,8,u32> PCMlength;     RegBit<24,8,u32> reg3;$/;"	m	union:APU::channel::__anon3	file:
+PGDT	src/arch/gdt.s	/^PGDT    DW PGDT - GDT         ; GDT SIZE$/;"	d
+PIDT	src/arch/idt.s	/^PIDT DW PIDT - IDT$/;"	d
+POP	src/arch/debug.s	/^				POP DX       $/;"	d
+POP	src/arch/debug.s	/^		POP DS$/;"	d
+PPU	emu/nativeemu/nativeemu.cpp	/^namespace PPU \/* Picture Processing Unit *\/$/;"	n	file:
+PPU	emu/nesemu.cc	/^namespace PPU \/* Picture Processing Unit *\/$/;"	n	file:
+PRAM	emu/nativeemu/nativeemu.cpp	/^    unsigned char NRAM[0x1000], PRAM[0x2000];$/;"	m	namespace:GamePak	file:
+PRAM	emu/nesemu.cc	/^    unsigned char NRAM[0x1000], PRAM[0x2000];$/;"	m	namespace:GamePak	file:
+PROCESS_H	inc/manager/process.h	22;"	d
+PUSH	src/arch/debug.s	/^				PUSH DX $/;"	d
+PUSH	src/arch/debug.s	/^		PUSH DS$/;"	d
+PeriodicIRQ	emu/nativeemu/nativeemu.cpp	/^    bool PeriodicIRQ = false, DMC_IRQ = false;$/;"	m	namespace:APU	file:
+PeriodicIRQ	emu/nesemu.cc	/^    bool PeriodicIRQ = false, DMC_IRQ = false;$/;"	m	namespace:APU	file:
+Pop	emu/nativeemu/nativeemu.cpp	/^    u8   Pop()        { return RB(0x100 | u8(++S)); }$/;"	f	namespace:CPU
+Pop	emu/nesemu.cc	/^    u8   Pop()        { return RB(0x100 | u8(++S)); }$/;"	f	namespace:CPU
+Process	inc/manager/process.h	/^		Process() : id(0) {$/;"	f	class:Process
+Process	inc/manager/process.h	/^	class Process {$/;"	c
+ProgramSection	src/manager/system.cpp	/^	ProgramSection( FileSystem &fs, fid_t fd, uintptr_t offset ) : fs(fs), fd(fd) {$/;"	f	class:ProgramSection
+ProgramSection	src/manager/system.cpp	/^class ProgramSection {$/;"	c	file:
+Push	emu/nativeemu/nativeemu.cpp	/^    void Push(u8 v)   { WB(0x100 | u8(S--), v); }$/;"	f	namespace:CPU
+Push	emu/nesemu.cc	/^    void Push(u8 v)   { WB(0x100 | u8(S--), v); }$/;"	f	namespace:CPU
+PutPixel	emu/nativeemu/nativeemu.cpp	/^    void PutPixel(unsigned px,unsigned py, unsigned pixel, int offset)$/;"	f	namespace:IO
+PutPixel	emu/nesemu.cc	/^    void PutPixel(unsigned px,unsigned py, unsigned pixel, int offset)$/;"	f	namespace:IO
+RAM	emu/nativeemu/nativeemu.cpp	/^    u8 RAM[0x800];$/;"	m	namespace:CPU	file:
+RAM	emu/nesemu.cc	/^    u8 RAM[0x800];$/;"	m	namespace:CPU	file:
+RB	emu/nativeemu/nativeemu.cpp	/^    u8 RB(u16 addr)      { return MemAccess<0>(addr); }$/;"	f	namespace:CPU
+RB	emu/nesemu.cc	/^    u8 RB(u16 addr)      { return MemAccess<0>(addr); }$/;"	f	namespace:CPU
+REALPTR	inc/device/vesa.h	46;"	d
+REAL_CODE	src/arch/gdt.s	/^	REAL_CODE    EQU $ - GDT  ; 16bits Protected Mode "Real Mode"$/;"	d
+REAL_DATA	src/arch/gdt.s	/^	REAL_DATA    EQU $ - GDT  ; 16bits Protected Mode "Real Mode"$/;"	d
+RED	inc/device/video.h	/^			RED,$/;"	e	enum:Video::tColor
+REGISTERS	src/arch/16BitsInterruptColler.s	/^REGISTERS:$/;"	l
+REGISTERS_H	inc/registers.h	22;"	d
+REQUIRE	lib/ktest/ktest.h	98;"	d
+REQUIRE	test/ktest.h	78;"	d
+REQUIRE	test/syscalls.test.cpp	/^	REQUIRE( fclose( fp ) == 0 );$/;"	v
+REQUIRE	test/syscalls.test.cpp	/^	REQUIRE( fclose(fp) == 0 );$/;"	v
+REQUIRE	test/syscalls.test.cpp	/^	REQUIRE( ftell( fp ) == 5 );$/;"	v
+REQUIRE	test/test.cpp	/^	REQUIRE( fclose(fp) == 0 );$/;"	v
+REQUIRE_1	lib/ktest/ktest.h	84;"	d
+REQUIRE_1	test/ktest.h	64;"	d
+REQUIRE_2	lib/ktest/ktest.h	90;"	d
+REQUIRE_2	test/ktest.h	70;"	d
+REQUIRE_X	lib/ktest/ktest.h	97;"	d
+REQUIRE_X	test/ktest.h	77;"	d
+REQUIRE_Y	lib/ktest/ktest.h	96;"	d
+REQUIRE_Y	test/ktest.h	76;"	d
+ROM	emu/nativeemu/nativeemu.cpp	/^    std::vector<u8> ROM, VRAM(0x2000);$/;"	m	namespace:GamePak	file:
+ROM	emu/nesemu.cc	/^    std::vector<u8> ROM, VRAM(0x2000);$/;"	m	namespace:GamePak	file:
+ROM_Granularity	emu/nativeemu/nativeemu.cpp	/^    const unsigned ROM_Granularity  = 0x2000, ROM_Pages = 0x10000 \/ ROM_Granularity;$/;"	m	namespace:GamePak	file:
+ROM_Granularity	emu/nesemu.cc	/^    const unsigned ROM_Granularity  = 0x2000, ROM_Pages = 0x10000 \/ ROM_Granularity;$/;"	m	namespace:GamePak	file:
+ROM_Pages	emu/nativeemu/nativeemu.cpp	/^    const unsigned ROM_Granularity  = 0x2000, ROM_Pages = 0x10000 \/ ROM_Granularity;$/;"	m	namespace:GamePak	file:
+ROM_Pages	emu/nesemu.cc	/^    const unsigned ROM_Granularity  = 0x2000, ROM_Pages = 0x10000 \/ ROM_Granularity;$/;"	m	namespace:GamePak	file:
+Read	emu/nativeemu/nativeemu.cpp	/^    u8 Read()$/;"	f	namespace:APU
+Read	emu/nesemu.cc	/^    u8 Read()$/;"	f	namespace:APU
+RegBit	emu/nativeemu/nativeemu.cpp	/^struct RegBit$/;"	s	file:
+RegBit	emu/nesemu.cc	/^struct RegBit$/;"	s	file:
+Registers	inc/registers.h	/^		Registers() {$/;"	f	struct:Registers
+Registers	inc/registers.h	/^	struct Registers {$/;"	s
+S	emu/nativeemu/nativeemu.cpp	/^    u8 A=0,X=0,Y=0,S=0;$/;"	m	namespace:CPU	file:
+S	emu/nesemu.cc	/^    u8 A=0,X=0,Y=0,S=0;$/;"	m	namespace:CPU	file:
+SCHEDULER_H	inc/manager/scheduler.h	22;"	d
+SCHEDULER_QUANTUM	inc/manager/scheduler.h	28;"	d
+SEGMENT_NOT_PRESENT	inc/arch/arch.h	/^		SEGMENT_NOT_PRESENT = 11,$/;"	e	enum:SSID
+SERIAL_0	inc/arch/arch.h	/^		SERIAL_0 = 35,$/;"	e	enum:SSID
+SERIAL_1	inc/arch/arch.h	/^		SERIAL_1 = 36,$/;"	e	enum:SSID
+SIGN_FLAG	src/arch/debug.s	/^SIGN_FLAG                   EQU 1 << 7$/;"	d
+SLAVE_ISR_SIZE	src/arch/isr.s	/^SLAVE_ISR_SIZE   EQU isr.l41 - isr.l40$/;"	d
+SP0hit	emu/nativeemu/nativeemu.cpp	/^        RegBit<2,1,u32> Inc;        RegBit< 9,1,u32> ShowBG8;   RegBit<22,1,u32> SP0hit;$/;"	m	union:PPU::regtype	file:
+SP0hit	emu/nesemu.cc	/^        RegBit<2,1,u32> Inc;        RegBit< 9,1,u32> ShowBG8;   RegBit<22,1,u32> SP0hit;$/;"	m	union:PPU::regtype	file:
+SPaddr	emu/nativeemu/nativeemu.cpp	/^        RegBit<3,1,u32> SPaddr;     RegBit<10,1,u32> ShowSP8;   RegBit<23,1,u32> InVBlank;$/;"	m	union:PPU::regtype	file:
+SPaddr	emu/nesemu.cc	/^        RegBit<3,1,u32> SPaddr;     RegBit<10,1,u32> ShowSP8;   RegBit<23,1,u32> InVBlank;$/;"	m	union:PPU::regtype	file:
+SPoverflow	emu/nativeemu/nativeemu.cpp	/^        RegBit<0,2,u32> BaseNTA;    RegBit< 8,1,u32> Grayscale; RegBit<21,1,u32> SPoverflow;$/;"	m	union:PPU::regtype	file:
+SPoverflow	emu/nesemu.cc	/^        RegBit<0,2,u32> BaseNTA;    RegBit< 8,1,u32> Grayscale; RegBit<21,1,u32> SPoverflow;$/;"	m	union:PPU::regtype	file:
+SPsize	emu/nativeemu/nativeemu.cpp	/^        RegBit<5,1,u32> SPsize;     RegBit<12,1,u32> ShowSP;    RegBit<24,8,u32> OAMaddr;$/;"	m	union:PPU::regtype	file:
+SPsize	emu/nesemu.cc	/^        RegBit<5,1,u32> SPsize;     RegBit<12,1,u32> ShowSP;    RegBit<24,8,u32> OAMaddr;$/;"	m	union:PPU::regtype	file:
+SRCDIR	makefile	/^SRCDIR=src$/;"	m
+SSID	inc/arch/arch.h	/^	enum SSID {$/;"	g
+STACK_EAX	src/arch/debug.s	/^STACK_EAX EQU 28$/;"	d
+STACK_EBP	src/arch/debug.s	/^STACK_EBP EQU 8$/;"	d
+STACK_EBX	src/arch/debug.s	/^STACK_EBX EQU 16$/;"	d
+STACK_ECX	src/arch/debug.s	/^STACK_ECX EQU 24$/;"	d
+STACK_EDI	src/arch/debug.s	/^STACK_EDI EQU 0$/;"	d
+STACK_EDX	src/arch/debug.s	/^STACK_EDX EQU 20$/;"	d
+STACK_ESI	src/arch/debug.s	/^STACK_ESI EQU 4$/;"	d
+STACK_ESP	src/arch/debug.s	/^STACK_ESP EQU 12$/;"	d
+STACK_EXCEPTION	inc/arch/arch.h	/^		STACK_EXCEPTION = 12,$/;"	e	enum:SSID
+STORAGE_H	inc/device/storage.h	22;"	d
+STORAGE_PAGE_SIZE	inc/device/storage.h	26;"	d
+STRCONCAT	inc/util/debug.h	29;"	d
+STRINGIFY	inc/util/debug.h	30;"	d
+SUBTEST	lib/ktest/ktest.h	71;"	d
+SUBTEST	test/ktest.h	51;"	d
+SYSCALLS_H	inc/manager/syscalls.h	22;"	d
+SYSTEM_H	inc/manager/system.h	22;"	d
+SYSTEM_TIMER	inc/arch/arch.h	/^		SYSTEM_TIMER = 32,$/;"	e	enum:SSID
+SYS_ACCESS	src/arch/posix.cpp	57;"	d	file:
+SYS_ALARM	src/arch/posix.cpp	50;"	d	file:
+SYS_BRK	src/arch/posix.cpp	54;"	d	file:
+SYS_CHDIR	src/arch/posix.cpp	43;"	d	file:
+SYS_CHMOD	src/arch/posix.cpp	45;"	d	file:
+SYS_CLOSE	src/arch/posix.cpp	37;"	d	file:
+SYS_CREAT	src/arch/posix.cpp	39;"	d	file:
+SYS_EXECVE	src/arch/posix.cpp	42;"	d	file:
+SYS_EXIT	src/arch/posix.cpp	32;"	d	file:
+SYS_FORK	src/arch/posix.cpp	33;"	d	file:
+SYS_FSTAT	src/arch/posix.cpp	51;"	d	file:
+SYS_GETPID	src/arch/posix.cpp	49;"	d	file:
+SYS_GETTIMEOFDAY	src/arch/posix.cpp	55;"	d	file:
+SYS_KERNEL_RELEASE	src/posix/newuname.cpp	29;"	d	file:
+SYS_KERNEL_VERSION	src/posix/newuname.cpp	27;"	d	file:
+SYS_KILL	src/arch/posix.cpp	52;"	d	file:
+SYS_LCHOW	src/arch/posix.cpp	46;"	d	file:
+SYS_LINK	src/arch/posix.cpp	40;"	d	file:
+SYS_LSEEK	src/arch/posix.cpp	48;"	d	file:
+SYS_MACHINE_NAME	src/posix/newuname.cpp	28;"	d	file:
+SYS_MKNOD	src/arch/posix.cpp	44;"	d	file:
+SYS_NAME	src/posix/newuname.cpp	25;"	d	file:
+SYS_NETWORK_NAME	src/posix/newuname.cpp	26;"	d	file:
+SYS_OPEN	src/arch/posix.cpp	36;"	d	file:
+SYS_READ	src/arch/posix.cpp	34;"	d	file:
+SYS_RESTART	src/arch/posix.cpp	31;"	d	file:
+SYS_SLEEP	src/arch/posix.cpp	56;"	d	file:
+SYS_STAT	src/arch/posix.cpp	47;"	d	file:
+SYS_TIMES	src/arch/posix.cpp	53;"	d	file:
+SYS_UNLINK	src/arch/posix.cpp	41;"	d	file:
+SYS_WAIT	src/arch/posix.cpp	38;"	d	file:
+SYS_WRITE	src/arch/posix.cpp	35;"	d	file:
+Scheduler	inc/manager/scheduler.h	/^	class Scheduler : public Manager {$/;"	c
+Scheduler	src/manager/scheduler.cpp	/^Scheduler::Scheduler() : quantum(0) {$/;"	f	class:Scheduler
+SetPages	emu/nativeemu/nativeemu.cpp	/^    static void SetPages(unsigned size, unsigned baseaddr, unsigned index)$/;"	f	namespace:GamePak
+SetPages	emu/nesemu.cc	/^    static void SetPages(unsigned size, unsigned baseaddr, unsigned index)$/;"	f	namespace:GamePak
+SetROM	emu/nativeemu/nativeemu.cpp	/^    auto& SetROM  = SetPages< ROM_Pages, banks, ROM, ROM_Granularity>;$/;"	m	namespace:GamePak	file:
+SetROM	emu/nesemu.cc	/^    auto& SetROM  = SetPages< ROM_Pages, banks, ROM, ROM_Granularity>;$/;"	m	namespace:GamePak	file:
+SetVROM	emu/nativeemu/nativeemu.cpp	/^    auto& SetVROM = SetPages<VROM_Pages,Vbanks,VRAM,VROM_Granularity>;$/;"	m	namespace:GamePak	file:
+SetVROM	emu/nesemu.cc	/^    auto& SetVROM = SetPages<VROM_Pages,Vbanks,VRAM,VROM_Granularity>;$/;"	m	namespace:GamePak	file:
+ShowBG	emu/nativeemu/nativeemu.cpp	/^        RegBit<4,1,u32> BGaddr;     RegBit<11,1,u32> ShowBG;    \/\/ Reg3 (write)$/;"	m	union:PPU::regtype	file:
+ShowBG	emu/nesemu.cc	/^        RegBit<4,1,u32> BGaddr;     RegBit<11,1,u32> ShowBG;    \/\/ Reg3 (write)$/;"	m	union:PPU::regtype	file:
+ShowBG8	emu/nativeemu/nativeemu.cpp	/^        RegBit<2,1,u32> Inc;        RegBit< 9,1,u32> ShowBG8;   RegBit<22,1,u32> SP0hit;$/;"	m	union:PPU::regtype	file:
+ShowBG8	emu/nesemu.cc	/^        RegBit<2,1,u32> Inc;        RegBit< 9,1,u32> ShowBG8;   RegBit<22,1,u32> SP0hit;$/;"	m	union:PPU::regtype	file:
+ShowBGSP	emu/nativeemu/nativeemu.cpp	/^        RegBit<6,1,u32> SlaveFlag;  RegBit<11,2,u32> ShowBGSP;  RegBit<24,2,u32> OAMdata;$/;"	m	union:PPU::regtype	file:
+ShowBGSP	emu/nesemu.cc	/^        RegBit<6,1,u32> SlaveFlag;  RegBit<11,2,u32> ShowBGSP;  RegBit<24,2,u32> OAMdata;$/;"	m	union:PPU::regtype	file:
+ShowSP	emu/nativeemu/nativeemu.cpp	/^        RegBit<5,1,u32> SPsize;     RegBit<12,1,u32> ShowSP;    RegBit<24,8,u32> OAMaddr;$/;"	m	union:PPU::regtype	file:
+ShowSP	emu/nesemu.cc	/^        RegBit<5,1,u32> SPsize;     RegBit<12,1,u32> ShowSP;    RegBit<24,8,u32> OAMaddr;$/;"	m	union:PPU::regtype	file:
+ShowSP8	emu/nativeemu/nativeemu.cpp	/^        RegBit<3,1,u32> SPaddr;     RegBit<10,1,u32> ShowSP8;   RegBit<23,1,u32> InVBlank;$/;"	m	union:PPU::regtype	file:
+ShowSP8	emu/nesemu.cc	/^        RegBit<3,1,u32> SPaddr;     RegBit<10,1,u32> ShowSP8;   RegBit<23,1,u32> InVBlank;$/;"	m	union:PPU::regtype	file:
+SimpleKernel	src/kernel.cpp	/^	SimpleKernel() : System() {$/;"	f	class:SimpleKernel
+SimpleKernel	src/kernel.cpp	/^class SimpleKernel : public System {$/;"	c	file:
+Sistema de arquivos	doc/fs.tex	/^\\subsection{Sistema de arquivos}$/;"	u
+SlaveFlag	emu/nativeemu/nativeemu.cpp	/^        RegBit<6,1,u32> SlaveFlag;  RegBit<11,2,u32> ShowBGSP;  RegBit<24,2,u32> OAMdata;$/;"	m	union:PPU::regtype	file:
+SlaveFlag	emu/nesemu.cc	/^        RegBit<6,1,u32> SlaveFlag;  RegBit<11,2,u32> ShowBGSP;  RegBit<24,2,u32> OAMdata;$/;"	m	union:PPU::regtype	file:
+Storage	inc/device/storage.h	/^	class Storage : public IODevice {$/;"	c
+Storage	src/device/storage.cpp	/^Storage::Storage() : size( &_storage_top - &_storage_base ), buffer((char*) (&_storage_base)), offset(0) {$/;"	f	class:Storage
+SweepDecrease	emu/nativeemu/nativeemu.cpp	/^            RegBit<4,1,u32> EnvDecayDisable;      RegBit<11,1,u32> SweepDecrease; RegBit<23,1,u32> NoiseType;$/;"	m	union:APU::channel::__anon3	file:
+SweepDecrease	emu/nesemu.cc	/^            RegBit<4,1,u32> EnvDecayDisable;      RegBit<11,1,u32> SweepDecrease; RegBit<23,1,u32> NoiseType;$/;"	m	union:APU::channel::__anon3	file:
+SweepEnable	emu/nativeemu/nativeemu.cpp	/^            RegBit<5,1,u32> EnvDecayLoopEnable;   RegBit<15,1,u32> SweepEnable;   \/\/ 4003, 4007, 400B, 400F, 4010:$/;"	m	union:APU::channel::__anon3	file:
+SweepEnable	emu/nesemu.cc	/^            RegBit<5,1,u32> EnvDecayLoopEnable;   RegBit<15,1,u32> SweepEnable;   \/\/ 4003, 4007, 400B, 400F, 4010:$/;"	m	union:APU::channel::__anon3	file:
+SweepRate	emu/nativeemu/nativeemu.cpp	/^            RegBit<0,4,u32> EnvDecayRate;         RegBit<12,3,u32> SweepRate;     RegBit<16,11,u32> WaveLength;$/;"	m	union:APU::channel::__anon3	file:
+SweepRate	emu/nesemu.cc	/^            RegBit<0,4,u32> EnvDecayRate;         RegBit<12,3,u32> SweepRate;     RegBit<16,11,u32> WaveLength;$/;"	m	union:APU::channel::__anon3	file:
+SweepShift	emu/nativeemu/nativeemu.cpp	/^            RegBit<6,2,u32> DutyCycle;            RegBit< 8,3,u32> SweepShift;    RegBit<16,4,u32> NoiseFreq;$/;"	m	union:APU::channel::__anon3	file:
+SweepShift	emu/nesemu.cc	/^            RegBit<6,2,u32> DutyCycle;            RegBit< 8,3,u32> SweepShift;    RegBit<16,4,u32> NoiseFreq;$/;"	m	union:APU::channel::__anon3	file:
+SysCalls	inc/manager/syscalls.h	/^	class SysCalls {$/;"	c
+SysCalls	src/manager/syscalls.cpp	/^SysCalls::SysCalls() {$/;"	f	class:SysCalls
+System	inc/manager/system.h	/^class System : public InterruptionListener {$/;"	c
+System	src/manager/system.cpp	/^System::System() : fs(0), memory(0), scheduler(0) {$/;"	f	class:System
+TEST	lib/ktest/ktest.h	54;"	d
+TEST	test/ktest.h	34;"	d
+TEST_MODULES	makefile	/^TEST_MODULES   :=$(addprefix $(OBJDIR)\/, arch.o crti.o crtbegin.o core.o debug.o device.o ilistener.o inputdevice.o $(TSTOBJ) ktest.o keyboard.o keybuffer.o manager.o memory.o storage.o nfsii.o filesystem.o outputdevice.o scheduler.o process.o posix.o system.o uart.o video.o disk.o brk.o close.o default.o execve.o exit.o fork.o fstat.o getpid.o gettimeofday.o kill.o link.o lseek.o newuname.o open.o read.o reboot.o stat.o times.o unlink.o wait.o write.o syscalls.o crtend.o crtn.o libstdc++.a libm.a libc.a libgcc.a )$/;"	m
+TEXT_MODE_BUFFER	src/arch/debug.s	/^TEXT_MODE_BUFFER            EQU 0xB8000$/;"	d
+TOSTRING	inc/util/debug.h	31;"	d
+TRAP_FLAG	src/arch/debug.s	/^TRAP_FLAG                   EQU 1 << 8 $/;"	d
+TSTDIR	makefile	/^TSTDIR=test$/;"	m
+TSTOBJ	makefile	/^TSTOBJ=$(notdir $(TSTSRC:.cpp=.o))$/;"	m
+TSTSRC	makefile	/^TSTSRC=$(wildcard $(TSTDIR)\/*\/*.cpp $(TSTDIR)\/*.cpp)$/;"	m
+TYPE_H	inc/types.h	22;"	d
+UART	inc/device/uart.h	/^	class UART : public IODevice {$/;"	c
+UART	src/device/uart.cpp	/^UART::UART( const uint16_t port = COM1 ) : port( port ) {$/;"	f	class:UART
+UART_H	inc/device/uart.h	22;"	d
+USER_CODE	src/arch/gdt.s	/^	USER_CODE    EQU $ - GDT  ; 32bits Protected Mode "Users Ring0"$/;"	d
+USER_DATA	src/arch/gdt.s	/^	USER_DATA    EQU $ - GDT  ; 32bits Protected Mode "Users Ring0"$/;"	d
+V	emu/nativeemu/nativeemu.cpp	/^        RegBit<6> V; \/\/ overflow$/;"	m	union:CPU::__anon5	file:
+V	emu/nesemu.cc	/^        RegBit<6> V; \/\/ overflow$/;"	m	union:CPU::__anon5	file:
+VBEInfo	inc/device/vesa.h	/^struct VBEInfo {$/;"	s
+VBEMode	inc/device/vesa.h	/^struct VBEMode {$/;"	s
+VBlankState	emu/nativeemu/nativeemu.cpp	/^    int scanline=241, x=0, scanline_end=341, VBlankState=0, cycle_counter=0;$/;"	m	namespace:PPU	file:
+VBlankState	emu/nesemu.cc	/^    int scanline=241, x=0, scanline_end=341, VBlankState=0, cycle_counter=0;$/;"	m	namespace:PPU	file:
+VESA_BANK_SWITCHED_NOT_SUPPORTED	inc/device/vesa.h	38;"	d
+VESA_BIOS_OUTPUT_SUPPORTED	inc/device/vesa.h	34;"	d
+VESA_COLOR_MODE_SUPPORTED	inc/device/vesa.h	35;"	d
+VESA_DOUBLE_SCAN_AVAILABLE	inc/device/vesa.h	40;"	d
+VESA_DUAL_DISPLAY_ADDRESS_SUPPORTED	inc/device/vesa.h	44;"	d
+VESA_GRAPHICS_MODE	inc/device/vesa.h	36;"	d
+VESA_H	inc/device/vesa.h	22;"	d
+VESA_INTERLACED_MODE_AVAILABLE	inc/device/vesa.h	41;"	d
+VESA_LFB_SUPPORTED	inc/device/vesa.h	39;"	d
+VESA_LOW_MEMORY_BUFFER	inc/device/vesa.h	30;"	d
+VESA_MODE_INFO_AVAILABLE	inc/device/vesa.h	33;"	d
+VESA_MODE_SUPPORTED	inc/device/vesa.h	32;"	d
+VESA_STEREOSCOPIC_DISPLAY_SUPPORTED	inc/device/vesa.h	43;"	d
+VESA_TRIPLE_BUFFERING_SUPPORTED	inc/device/vesa.h	42;"	d
+VESA_VGA_INCOMPATIBLE	inc/device/vesa.h	37;"	d
+VIDEO_DEFAULT_COLOR	inc/device/video.h	64;"	d
+VIDEO_H	inc/device/video.h	22;"	d
+VIDEO_HEIGHT	inc/device/video.h	62;"	d
+VIDEO_TBUFFER_PTR	inc/device/video.h	63;"	d
+VIDEO_WIDTH	inc/device/video.h	61;"	d
+VROM_Granularity	emu/nativeemu/nativeemu.cpp	/^    const unsigned VROM_Granularity = 0x0400, VROM_Pages = 0x2000 \/ VROM_Granularity;$/;"	m	namespace:GamePak	file:
+VROM_Granularity	emu/nesemu.cc	/^    const unsigned VROM_Granularity = 0x0400, VROM_Pages = 0x2000 \/ VROM_Granularity;$/;"	m	namespace:GamePak	file:
+VROM_Pages	emu/nativeemu/nativeemu.cpp	/^    const unsigned VROM_Granularity = 0x0400, VROM_Pages = 0x2000 \/ VROM_Granularity;$/;"	m	namespace:GamePak	file:
+VROM_Pages	emu/nesemu.cc	/^    const unsigned VROM_Granularity = 0x0400, VROM_Pages = 0x2000 \/ VROM_Granularity;$/;"	m	namespace:GamePak	file:
+Vbanks	emu/nativeemu/nativeemu.cpp	/^    unsigned char* Vbanks[VROM_Pages] = {};$/;"	m	namespace:GamePak	file:
+Vbanks	emu/nesemu.cc	/^    unsigned char* Vbanks[VROM_Pages] = {};$/;"	m	namespace:GamePak	file:
+Vesa	inc/device/vesa.h	/^	Vesa( unsigned short width = 800, unsigned short height = 600, unsigned char bpp = 24 ) : modes(0), width(width), height(height), bpp(bpp) {$/;"	f	class:Vesa
+Vesa	inc/device/vesa.h	/^class Vesa : public OutputDevice {$/;"	c
+VesaMode	inc/device/vesa.h	/^	VesaMode( unsigned short id, unsigned short width, unsigned short height,$/;"	f	struct:VesaMode
+VesaMode	inc/device/vesa.h	/^struct VesaMode {$/;"	s
+Video	inc/device/video.h	/^	class Video : public OutputDevice {$/;"	c
+Video	src/device/video.cpp	/^Video::Video() : color( VIDEO_DEFAULT_COLOR ), buffer( (tVideoData*)$/;"	f	class:Video
+WB	emu/nativeemu/nativeemu.cpp	/^    u8 WB(u16 addr,u8 v) { return MemAccess<1>(addr, v); }$/;"	f	namespace:CPU
+WB	emu/nesemu.cc	/^    u8 WB(u16 addr,u8 v) { return MemAccess<1>(addr, v); }$/;"	f	namespace:CPU
+WHITE	inc/device/video.h	/^			WHITE$/;"	e	enum:Video::tColor
+WRITE	lib/ktest/ktest.h	81;"	d
+WRITE	test/ktest.h	61;"	d
+WRITELN	lib/ktest/ktest.h	78;"	d
+WRITELN	test/ktest.h	58;"	d
+WaveLength	emu/nativeemu/nativeemu.cpp	/^            RegBit<0,4,u32> EnvDecayRate;         RegBit<12,3,u32> SweepRate;     RegBit<16,11,u32> WaveLength;$/;"	m	union:APU::channel::__anon3	file:
+WaveLength	emu/nesemu.cc	/^            RegBit<0,4,u32> EnvDecayRate;         RegBit<12,3,u32> SweepRate;     RegBit<16,11,u32> WaveLength;$/;"	m	union:APU::channel::__anon3	file:
+Write	emu/nativeemu/nativeemu.cpp	/^    void Write(u8 index, u8 value)$/;"	f	namespace:APU
+Write	emu/nesemu.cc	/^    void Write(u8 index, u8 value)$/;"	f	namespace:APU
+X	emu/nativeemu/nativeemu.cpp	/^    u8 A=0,X=0,Y=0,S=0;$/;"	m	namespace:CPU	file:
+X	emu/nesemu.cc	/^    u8 A=0,X=0,Y=0,S=0;$/;"	m	namespace:CPU	file:
+Y	emu/nativeemu/nativeemu.cpp	/^    u8 A=0,X=0,Y=0,S=0;$/;"	m	namespace:CPU	file:
+Y	emu/nesemu.cc	/^    u8 A=0,X=0,Y=0,S=0;$/;"	m	namespace:CPU	file:
+YELLOW	inc/device/video.h	/^			YELLOW,$/;"	e	enum:Video::tColor
+Z	emu/nativeemu/nativeemu.cpp	/^        RegBit<1> Z; \/\/ zero$/;"	m	union:CPU::__anon5	file:
+Z	emu/nesemu.cc	/^        RegBit<1> Z; \/\/ zero$/;"	m	union:CPU::__anon5	file:
+ZERO_FLAG	src/arch/debug.s	/^ZERO_FLAG                   EQU 1 << 6$/;"	d
+__cxa_pure_virtual	src/core.cpp	/^void __cxa_pure_virtual() {$/;"	f
+__env	src/arch/posix.cpp	/^char *__env[1] = { 0 };$/;"	v
+__interrupt_handler	src/core.cpp	/^void __interrupt_handler( SSID ssid, Registers &registers ) {$/;"	f
+_callBIOSSubRotine	src/arch/arch.s	/^_callBIOSSubRotine: EQU bios_call$/;"	d
+_exit	src/arch/posix.cpp	/^extern "C" int _exit( int status ) {$/;"	f
+_fini	src/arch/crti.s	/^_fini:$/;"	l
+_heap_base	inc/arch/arch.h	/^	extern "C" char _heap_base;$/;"	v
+_heap_top	inc/arch/arch.h	/^	extern "C" char _heap_top;$/;"	v
+_init	src/arch/crti.s	/^_init:$/;"	l
+_kernel_base	inc/arch/arch.h	/^	extern "C" char _kernel_base;$/;"	v
+_kernel_top	inc/arch/arch.h	/^	extern "C" char _kernel_top;$/;"	v
+_lstate	src/arch/arch.s	/^_lstate:$/;"	l
+_multiboot	src/arch/multiboot.s	/^_multiboot:$/;"	l
+_pdcreate	src/arch/arch.s	/^_pdcreate:$/;"	l
+_pdload	src/arch/arch.s	/^_pdload:$/;"	l
+_pdprotect	src/arch/arch.s	/^_pdprotect:$/;"	l
+_pdsave	src/arch/arch.s	/^_pdsave:$/;"	l
+_pdupdate	src/arch/arch.s	/^_pdupdate:$/;"	l
+_ptcreate	src/arch/arch.s	/^_ptcreate:$/;"	l
+_reboot	src/arch/arch.s	/^_reboot:$/;"	l
+_sstate	src/arch/arch.s	/^_sstate:$/;"	l
+_stack_base	inc/arch/arch.h	/^	extern "C" char _stack_base;$/;"	v
+_stack_top	inc/arch/arch.h	/^	extern "C" char _stack_top;$/;"	v
+_start	src/arch/arch.s	/^_start:$/;"	l
+_start	src/arch/crt0.s	/^_start:$/;"	l
+_storage_base	inc/arch/arch.h	/^	extern "C" char _storage_base;$/;"	v
+_storage_top	inc/arch/arch.h	/^	extern "C" char _storage_top;$/;"	v
+acceleratedModesPtr	inc/device/vesa.h	/^	uint32_t acceleratedModesPtr;$/;"	m	struct:VBEInfo
+access	src/arch/posix.cpp	/^extern "C" int access( const char *pathname, int mode ) {$/;"	f
+addr	inc/manager/nfsii.h	/^				lba_t addr;$/;"	m	struct:NFSII::tNode
+addr	inc/manager/nfsii.h	/^				lba_t addr;$/;"	m	struct:NFSII::tStorageBlock
+addr	inc/manager/nfsii.h	/^				lba_t addr;$/;"	m	struct:NFSII::tSubNode
+addr	inc/types.h	/^	uint64_t addr;$/;"	m	struct:tMemoryMap
+addr1	test/filesystem.test.cpp	/^	lba_t addr1, addr2, addr3, addr4, addr5;$/;"	v
+addr2	test/filesystem.test.cpp	/^	lba_t addr1, addr2, addr3, addr4, addr5;$/;"	v
+addr3	test/filesystem.test.cpp	/^	lba_t addr1, addr2, addr3, addr4, addr5;$/;"	v
+addr4	test/filesystem.test.cpp	/^	lba_t addr1, addr2, addr3, addr4, addr5;$/;"	v
+addr5	test/filesystem.test.cpp	/^	lba_t addr1, addr2, addr3, addr4, addr5;$/;"	v
+address	emu/nativeemu/nativeemu.cpp	/^        int length_counter, linear_counter, address, envelope;$/;"	m	struct:APU::channel	file:
+address	emu/nesemu.cc	/^        int length_counter, linear_counter, address, envelope;$/;"	m	struct:APU::channel	file:
+alarm	src/arch/posix.cpp	/^extern "C" unsigned alarm( unsigned seconds ) {$/;"	f
+align	inc/manager/memory.h	/^	uintptr_t Memory::align( uintptr_t addr ) const {$/;"	f	class:Memory
+allocate	src/manager/memory.cpp	/^uintptr_t Memory::allocate( size_t numberOfPages ) {$/;"	f	class:Memory
+allocate	src/manager/nfsii.cpp	/^lba_t NFSII::allocate( size_t numberOfPages ) {$/;"	f	class:NFSII
+altgrEnabledMap	inc/device/keyboard.h	/^		static uint8_t altgrEnabledMap[];$/;"	m	class:Keyboard
+apmTable	inc/types.h	/^	const uint32_t apmTable;$/;"	m	struct:tMultibootInfo
+array	test/kernel.test.cpp	/^	char **array = new char*[size];$/;"	v
+array	test/test.cpp	/^	char **array = new char*[size];$/;"	v
+assert	inc/util/debug.h	54;"	d
+assert_1	inc/util/debug.h	44;"	d
+assert_1	inc/util/debug.h	48;"	d
+assert_2	inc/util/debug.h	38;"	d
+assert_2	inc/util/debug.h	49;"	d
+assert_x	inc/util/debug.h	53;"	d
+assert_y	inc/util/debug.h	52;"	d
+attr	emu/nativeemu/nativeemu.cpp	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+attr	emu/nesemu.cc	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+bankSize	inc/device/vesa.h	/^	uint8_t bankSize;$/;"	m	struct:VBEMode
+banks	emu/nativeemu/nativeemu.cpp	/^    unsigned char* banks[ROM_Pages]  = {};$/;"	m	namespace:GamePak	file:
+banks	emu/nesemu.cc	/^    unsigned char* banks[ROM_Pages]  = {};$/;"	m	namespace:GamePak	file:
+basenta	emu/nativeemu/nativeemu.cpp	/^        RegBit<13,2,u32> basenta;   \/\/ nametable index (copied from 2000)$/;"	m	union:PPU::scrolltype	file:
+basenta	emu/nesemu.cc	/^        RegBit<13,2,u32> basenta;   \/\/ nametable index (copied from 2000)$/;"	m	union:PPU::scrolltype	file:
+basenta_h	emu/nativeemu/nativeemu.cpp	/^        RegBit<13,1,u32> basenta_h; \/\/ horizontal nametable index$/;"	m	union:PPU::scrolltype	file:
+basenta_h	emu/nesemu.cc	/^        RegBit<13,1,u32> basenta_h; \/\/ horizontal nametable index$/;"	m	union:PPU::scrolltype	file:
+basenta_v	emu/nativeemu/nativeemu.cpp	/^        RegBit<14,1,u32> basenta_v; \/\/ vertical   nametable index$/;"	m	union:PPU::scrolltype	file:
+basenta_v	emu/nesemu.cc	/^        RegBit<14,1,u32> basenta_v; \/\/ vertical   nametable index$/;"	m	union:PPU::scrolltype	file:
+begin	inc/util/keybuffer.h	/^			volatile int16_t begin;$/;"	m	class:KeyBuffer
+bg_shift_attr	emu/nativeemu/nativeemu.cpp	/^    u32 bg_shift_pat, bg_shift_attr;$/;"	m	namespace:PPU	file:
+bg_shift_attr	emu/nesemu.cc	/^    u32 bg_shift_pat, bg_shift_attr;$/;"	m	namespace:PPU	file:
+bg_shift_pat	emu/nativeemu/nativeemu.cpp	/^    u32 bg_shift_pat, bg_shift_attr;$/;"	m	namespace:PPU	file:
+bg_shift_pat	emu/nesemu.cc	/^    u32 bg_shift_pat, bg_shift_attr;$/;"	m	namespace:PPU	file:
+bios_IsrManager	src/arch/16BitsInterruptColler.s	/^bios_IsrManager:$/;"	l
+bios_call	src/arch/bios.s	/^bios_call:$/;"	l
+block0	inc/manager/nfsii.h	/^				lba_t block0;$/;"	m	struct:NFSII::tBootNode
+blockList	inc/manager/memory.h	/^		tBlock* blockList;$/;"	m	class:Memory
+blocks	test/filesystem.test.cpp	/^	lba_t blocks[70] = {0};$/;"	v
+blueFieldPos	inc/device/vesa.h	/^	uint8_t blueFieldPos;$/;"	m	struct:VBEMode
+blueMaskSize	inc/device/vesa.h	/^	uint8_t blueMaskSize;$/;"	m	struct:VBEMode
+bootDevice	inc/types.h	/^	const uint32_t bootDevice;$/;"	m	struct:tMultibootInfo
+bootNode	inc/manager/nfsii.h	/^			tBootNode bootNode;$/;"	m	class:NFSII
+bpp	inc/device/vesa.h	/^	uint8_t bpp;             \/\/ Number of bits per pixel$/;"	m	struct:VBEMode
+bpp	inc/device/vesa.h	/^	unsigned char bpp;$/;"	m	class:Vesa
+bpp	inc/device/vesa.h	/^	unsigned char bpp;$/;"	m	struct:VesaMode
+brk	src/arch/posix.cpp	/^extern "C" caddr_t brk( void *addr ) {$/;"	f
+buffer	inc/device/keyboard.h	/^		KeyBuffer buffer;$/;"	m	class:Keyboard
+buffer	inc/device/storage.h	/^			char *buffer;$/;"	m	class:Storage
+buffer	inc/device/video.h	/^		tVideoData* buffer;$/;"	m	class:Video
+buffer	inc/util/keybuffer.h	/^			uint16_t buffer[MAX_BUFFER_SIZE];$/;"	m	class:KeyBuffer
+buffer	test/filesystem.test.cpp	/^	char buffer[10];$/;"	v
+buffer	test/storage.test.cpp	/^	char *buffer = new char[STORAGE_PAGE_SIZE];$/;"	v
+buffer	test/storage.test.cpp	/^	char buffer[65] = {0};$/;"	v
+bytesPerLine	inc/device/vesa.h	/^	uint16_t bytesPerLine;   \/\/ Bytes per scan line$/;"	m	struct:VBEMode
+c	emu/nativeemu/nativeemu.cpp	961;"	d	file:
+c	emu/nativeemu/nativeemu.cpp	971;"	d	file:
+c	emu/nesemu.cc	947;"	d	file:
+c	emu/nesemu.cc	957;"	d	file:
+c	test/filesystem.test.cpp	/^		char c;$/;"	v
+c	test/filesystem.test.cpp	/^	char c;$/;"	v
+calcResolutionFactor	inc/device/vesa.h	/^	uint32_t calcResolutionFactor( unsigned short width = 800, unsigned short height = 600, unsigned char bpp = 24 ) {$/;"	f	class:Vesa
+call	src/ilistener.cpp	/^void InterruptionListener::call( const SSID ssid, Registers &registers ) {$/;"	f	class:InterruptionListener
+call	src/manager/syscalls.cpp	/^void SysCalls::call( Registers &registers ) {$/;"	f	class:SysCalls
+capabilities	inc/device/vesa.h	/^	uint32_t capabilities;$/;"	m	struct:VBEInfo
+capacity	inc/manager/file.h	/^		size_t capacity;$/;"	m	class:File
+capacity	inc/manager/file.h	/^		size_t capacity;$/;"	m	class:FileTable
+capacity	inc/manager/nfsii.h	/^				uint32_t capacity;$/;"	m	struct:NFSII::tNode
+capacity	test/filesystem.test.cpp	/^		size_t capacity = file->getCapacity();$/;"	v
+capacity	test/filesystem.test.cpp	/^	const size_t capacity = 128;$/;"	v
+capacity	test/filesystem.test.cpp	/^	size_t size, capacity;$/;"	v
+channel	emu/nativeemu/nativeemu.cpp	/^    struct channel$/;"	s	namespace:APU	file:
+channel	emu/nesemu.cc	/^    struct channel$/;"	s	namespace:APU	file:
+channels	emu/nativeemu/nativeemu.cpp	/^    } channels[5] = { };$/;"	m	namespace:APU	typeref:struct:APU::channel	file:
+channels	emu/nesemu.cc	/^    } channels[5] = { };$/;"	m	namespace:APU	typeref:struct:APU::channel	file:
+checksum	inc/types.h	/^	const uint32_t checksum;$/;"	m	struct:tMultibootHeader
+checksum	src/arch/multiboot.s	/^	checksum      DD -(0x1BADB002 + 0x3)$/;"	d
+child	test/filesystem.test.cpp	/^	NFSII::tSubNode child;$/;"	v
+clear	inc/manager/file.h	/^		inline void clear() {$/;"	f	class:File
+clear	inc/registers.h	/^		void clear() {$/;"	f	struct:Registers
+cloneDirectory	util/diskmaker/diskmaker.cpp	/^void cloneDirectory( FileSystem &fs, string dst, string src ) {$/;"	f
+close	src/arch/posix.cpp	/^extern "C" int close( int fd ) {$/;"	f
+close	src/manager/filesystem.cpp	/^bool FileSystem::close( fid_t fd ) {$/;"	f	class:FileSystem
+cmdline	inc/types.h	/^	const uint32_t cmdline;$/;"	m	struct:tModuleInfo
+cmdline	inc/types.h	/^	const uint32_t cmdline;$/;"	m	struct:tMultibootInfo
+color	inc/device/video.h	/^			char color;$/;"	m	struct:Video::tVideoData
+color	inc/device/video.h	/^		uint8_t color;$/;"	m	class:Video
+configTable	inc/types.h	/^	const uint32_t configTable;$/;"	m	struct:tMultibootInfo
+copy	inc/device/vesa.h	/^	void copy( VBEMode *mode ) {$/;"	f	struct:VBEMode
+copy	inc/registers.h	/^		void copy( Registers &registers ) {$/;"	f	struct:Registers
+copy	src/device/storage.cpp	/^bool Storage::copy( lba_t src, lba_t dst, size_t npages ) {$/;"	f	class:Storage
+count	emu/nativeemu/nativeemu.cpp	/^    bool count(int& v, int reset) { return --v < 0 ? (v=reset),true : false; }$/;"	f	namespace:APU
+count	emu/nesemu.cc	/^    bool count(int& v, int reset) { return --v < 0 ? (v=reset),true : false; }$/;"	f	namespace:APU
+createFileAt	util/diskmaker/diskmaker.cpp	/^void createFileAt( FileSystem &fs, string dst, string src ) {$/;"	f
+createFolderAt	util/diskmaker/diskmaker.cpp	/^void createFolderAt( FileSystem &fs, string dst, string src ) {$/;"	f
+createNode	src/manager/nfsii.cpp	/^size_t NFSII::createNode( const char *path, size_t size, NodeType type ) {$/;"	f	class:NFSII
+current	inc/util/dlinkedlist.h	/^		tNode *current;$/;"	m	class:DLinkedList
+currentDirectory	inc/manager/nfsii.h	/^			lba_t currentDirectory;$/;"	m	class:NFSII
+currentMap	inc/device/keyboard.h	/^		uint8_t* currentMap;$/;"	m	class:Keyboard
+currentSize	test/filesystem.test.cpp	/^	size_t currentSize = nfs.getNumberOfFreePages();$/;"	v
+currentSize	test/memory.test.cpp	/^	size_t currentSize = freeSize;$/;"	v
+currentSize	test/syscalls.test.cpp	/^	uintr_t currentSize;$/;"	v
+currentSize	test/test.cpp	/^	uintr_t currentSize;$/;"	v
+cycle_counter	emu/nativeemu/nativeemu.cpp	/^    int scanline=241, x=0, scanline_end=341, VBlankState=0, cycle_counter=0;$/;"	m	namespace:PPU	file:
+cycle_counter	emu/nesemu.cc	/^    int scanline=241, x=0, scanline_end=341, VBlankState=0, cycle_counter=0;$/;"	m	namespace:PPU	file:
+data	emu/nativeemu/nativeemu.cpp	/^    T data;$/;"	m	struct:RegBit	file:
+data	emu/nesemu.cc	/^    T data;$/;"	m	struct:RegBit	file:
+data	inc/util/dlinkedlist.h	/^			T data;$/;"	m	struct:DLinkedList::tNode
+deallocate	src/manager/memory.cpp	/^bool Memory::deallocate( uintptr_t addr, size_t numberOfPages ) {$/;"	f	class:Memory
+deallocate	src/manager/nfsii.cpp	/^bool NFSII::deallocate( lba_t blockAddr, size_t numberOfPages ) {$/;"	f	class:NFSII
+debug	src/arch/debug.s	/^	debug:$/;"	l
+debug_Break	src/arch/debug.s	/^	debug_Break:$/;"	l
+debug_Clear	src/arch/debug.s	/^	debug_Clear:$/;"	l
+debug_DrawFlagsInfo	src/arch/debug.s	/^	debug_DrawFlagsInfo:$/;"	l
+debug_Pause	src/arch/debug.s	/^	debug_Pause:$/;"	l
+debug_Print	src/arch/debug.s	/^	debug_Print:$/;"	l
+debug_PrintBuffer	src/arch/debug.s	/^	debug_PrintBuffer:  $/;"	l
+debug_PrintInterger	src/arch/debug.s	/^	debug_PrintInterger:$/;"	l
+debug_PrintString	src/arch/debug.s	/^	debug_PrintString:  $/;"	l
+debug_Reg16Info	src/arch/debug.s	/^	debug_Reg16Info:$/;"	l
+debug_Reg32Info	src/arch/debug.s	/^	debug_Reg32Info:$/;"	l
+debug_WaitKeyPress	src/arch/debug.s	/^	debug_WaitKeyPress:$/;"	l
+decode	src/manager/nfsii.cpp	/^const char* NFSII::decode( const char *path, tNode &current ) {$/;"	f	class:NFSII
+deleteNode	src/manager/nfsii.cpp	/^bool NFSII::deleteNode( tNode &node ) {$/;"	f	class:NFSII
+directColorModeInfo	inc/device/vesa.h	/^	uint8_t directColorModeInfo;$/;"	m	struct:VBEMode
+directory	inc/manager/nfsii.h	/^				lba_t directory;$/;"	m	struct:NFSII::tBootNode
+disable	src/manager/syscalls.cpp	/^void SysCalls::disable() {$/;"	f	class:SysCalls
+dispctrl	emu/nativeemu/nativeemu.cpp	/^        RegBit<0,8,u32> sysctrl;    RegBit< 8,8,u32> dispctrl;  RegBit<16,8,u32> status;$/;"	m	union:PPU::regtype	file:
+dispctrl	emu/nesemu.cc	/^        RegBit<0,8,u32> sysctrl;    RegBit< 8,8,u32> dispctrl;  RegBit<16,8,u32> status;$/;"	m	union:PPU::regtype	file:
+displacement	inc/manager/file.h	/^		int displacement;$/;"	m	class:File
+drivesAddr	inc/types.h	/^	const uint32_t drivesAddr;$/;"	m	struct:tMultibootInfo
+drivesLength	inc/types.h	/^	const uint32_t drivesLength;$/;"	m	struct:tMultibootInfo
+eh	src/manager/system.cpp	/^	Elf32_Ehdr eh;$/;"	m	class:ELF	file:
+elfSecAddr	inc/types.h	/^	const uint32_t elfSecAddr;$/;"	m	struct:tMultibootInfo
+elfSecNum	inc/types.h	/^	const uint32_t elfSecNum;$/;"	m	struct:tMultibootInfo
+elfSecSize	inc/types.h	/^	const uint32_t elfSecSize;$/;"	m	struct:tMultibootInfo
+elfshndx	inc/types.h	/^	const uint32_t elfshndx;$/;"	m	struct:tMultibootInfo
+enable	src/manager/syscalls.cpp	/^void SysCalls::enable() {$/;"	f	class:SysCalls
+enabled	inc/device/keyboard.h	/^		bool enabled;$/;"	m	class:Keyboard
+enabled	inc/manager/syscalls.h	/^		static bool enabled;$/;"	m	class:SysCalls
+enabled	src/manager/syscalls.cpp	/^bool SysCalls::enabled = true;$/;"	m	class:SysCalls	file:
+end	inc/util/keybuffer.h	/^			volatile int16_t end;$/;"	m	class:KeyBuffer
+env_delay	emu/nativeemu/nativeemu.cpp	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+env_delay	emu/nesemu.cc	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+envelope	emu/nativeemu/nativeemu.cpp	/^        int length_counter, linear_counter, address, envelope;$/;"	m	struct:APU::channel	file:
+envelope	emu/nesemu.cc	/^        int length_counter, linear_counter, address, envelope;$/;"	m	struct:APU::channel	file:
+environ	src/arch/posix.cpp	/^char **environ = __env;$/;"	v
+errno	src/arch/posix.cpp	25;"	d	file:
+error	inc/manager/system.h	/^	static OutputDevice *error;$/;"	m	class:System
+error	src/manager/system.cpp	/^OutputDevice*  System::error  = 0;$/;"	m	class:System	file:
+even_odd_toggle	emu/nativeemu/nativeemu.cpp	/^    bool even_odd_toggle=false, offset_toggle=false;$/;"	m	namespace:PPU	file:
+even_odd_toggle	emu/nesemu.cc	/^    bool even_odd_toggle=false, offset_toggle=false;$/;"	m	namespace:PPU	file:
+exec	src/manager/system.cpp	/^bool System::exec( const char* path ) {$/;"	f	class:System
+execve	src/arch/posix.cpp	/^extern "C" int execve( char *path, char **argv, char **env ){$/;"	f
+expand	src/manager/nfsii.cpp	/^bool NFSII::expand( fid_t fd, size_t nbytes ) {$/;"	f	class:NFSII
+expandNode	src/manager/nfsii.cpp	/^bool NFSII::expandNode( tNode &node, size_t nbytes ) {$/;"	f	class:NFSII
+farWindowFunc	inc/device/vesa.h	/^	uint32_t farWindowFunc;  \/\/ FAR window positioning function$/;"	m	struct:VBEMode
+fd	src/manager/system.cpp	/^	fid_t fd;$/;"	m	class:ELF	file:
+fd	src/manager/system.cpp	/^	fid_t fd;$/;"	m	class:ProgramSection	file:
+fd	test/filesystem.test.cpp	/^		fid_t fd = fs.open( name );$/;"	v
+fd	test/filesystem.test.cpp	/^	fid_t fd = fs.open( "\/\\0" );$/;"	v
+fd	test/filesystem.test.cpp	/^	fid_t fd = fs.open( "\/arquivo1.txt" );$/;"	v
+fd	test/filesystem.test.cpp	/^	fid_t fd = fs.open( "\/file" );$/;"	v
+fd	test/syscalls.test.cpp	/^	fid_t fd = nfs.open( "file.txt" );$/;"	v
+fid_t	inc/manager/file.h	/^typedef int fid_t;$/;"	t
+file	test/filesystem.test.cpp	/^		File* file = fs.getFile( fd );$/;"	v
+file	test/filesystem.test.cpp	/^	File *file = fs.getFile( fd );$/;"	v
+file	test/filesystem.test.cpp	/^	REQUIRE( file );$/;"	v
+file	test/syscalls.test.cpp	/^	File *file = fs.getFile( fd );$/;"	v
+file	test/syscalls.test.cpp	/^	REQUIRE( file );$/;"	v
+files	inc/manager/file.h	/^		DLinkedList<File*> files;$/;"	m	class:FileTable
+files	inc/manager/filesystem.h	/^		FileTable files;$/;"	m	class:FileSystem
+files	test/filesystem.test.cpp	/^	File **files = new File*[capacity];$/;"	v
+files	test/filesystem.test.cpp	/^	bool files[50] = {0};$/;"	v
+findNodeAt	src/manager/nfsii.cpp	/^lba_t NFSII::findNodeAt( const char *name, tNode& directory ) {$/;"	f	class:NFSII
+flags	inc/types.h	/^	const uint32_t flags;$/;"	m	struct:tMultibootHeader
+flags	inc/types.h	/^	const uint32_t flags;$/;"	m	struct:tMultibootInfo
+flags	src/arch/multiboot.s	/^	flags         DD 0x3$/;"	d
+flush	src/device/storage.cpp	/^bool Storage::flush() {$/;"	f	class:Storage
+flush	src/manager/filesystem.cpp	/^bool FileSystem::flush( fid_t fd ) {$/;"	f	class:FileSystem
+flush	src/manager/nfsii.cpp	/^bool NFSII::flush( fid_t fd ) {$/;"	f	class:NFSII
+fork	src/arch/posix.cpp	/^extern "C" int fork() {$/;"	f
+format	src/manager/nfsii.cpp	/^void NFSII::format() {$/;"	f	class:NFSII
+fp	test/syscalls.test.cpp	/^	FILE *fp = fopen ("file.txt", "w");$/;"	v
+fp	test/test.cpp	/^	FILE *fp = fopen ("file.txt", "w");$/;"	v
+freePages	test/filesystem.test.cpp	/^	lba_t freePages = fs.getNumberOfFreePages();$/;"	v
+freeSize	inc/manager/memory.h	/^		size_t freeSize;$/;"	m	class:Memory
+freeSize	inc/manager/nfsii.h	/^				lba_t freeSize;$/;"	m	struct:NFSII::tBootNode
+freeSize	test/memory.test.cpp	/^	size_t freeSize    = m.getFreeSize();$/;"	v
+freeSize	test/memory.test.cpp	/^	size_t freeSize = m.getFreeSize();$/;"	v
+fs	inc/manager/system.h	/^	FileSystem *fs;$/;"	m	class:System
+fs	src/manager/system.cpp	/^	FileSystem &fs;$/;"	m	class:ELF	file:
+fs	src/manager/system.cpp	/^	FileSystem& fs;$/;"	m	class:ProgramSection	file:
+fs	test/filesystem.test.cpp	/^	FileSystem &fs = nfs;$/;"	v
+fs	test/syscalls.test.cpp	/^	FileSystem &fs = nfs;$/;"	v
+fs	test/test.cpp	/^	FileSystem &fs = nfs;$/;"	v
+fstat	src/arch/posix.cpp	/^extern "C" int fstat( int fd, struct stat *st ) {$/;"	f
+getAllSupportedModes	inc/device/vesa.h	/^	const std::list<VesaMode*>& getAllSupportedModes() {$/;"	f	class:Vesa
+getBgColor	inc/device/video.h	/^	inline Video::tColor Video::getBgColor() const {$/;"	f	class:Video
+getCapacity	inc/manager/file.h	/^		inline const size_t getCapacity() {$/;"	f	class:File
+getCapacity	inc/manager/file.h	/^		inline size_t getCapacity() const {$/;"	f	class:FileTable
+getCurrent	inc/manager/file.h	/^		inline File* getCurrent() const {$/;"	f	class:FileTable
+getCurrent	inc/util/dlinkedlist.h	/^	template <class T> T DLinkedList<T>::getCurrent() const {$/;"	f	class:DLinkedList
+getDefaultError	inc/manager/system.h	/^inline OutputDevice* System::getDefaultError() const {$/;"	f	class:System
+getDefaultInput	inc/manager/system.h	/^inline InputDevice* System::getDefaultInput() const {$/;"	f	class:System
+getDefaultOutput	inc/manager/system.h	/^inline OutputDevice* System::getDefaultOutput() const {$/;"	f	class:System
+getElement	inc/util/dlinkedlist.h	/^	template <class T> T DLinkedList<T>::getElement( size_t id ) {$/;"	f	class:DLinkedList
+getEntryPointAddr	src/manager/system.cpp	/^	void* getEntryPointAddr() {$/;"	f	class:ELF
+getFile	inc/manager/file.h	/^		File* getFile( const fid_t fid ) {$/;"	f	class:FileTable
+getFile	inc/manager/filesystem.h	/^inline File* FileSystem::getFile( fid_t fid ){$/;"	f	class:FileSystem
+getFileSystem	inc/manager/system.h	/^inline FileSystem* System::getFileSystem() const {$/;"	f	class:System
+getFreeSize	inc/manager/memory.h	/^	size_t Memory::getFreeSize() const {$/;"	f	class:Memory
+getID	inc/manager/file.h	/^		inline const fid_t getID() const {$/;"	f	class:File
+getID	inc/manager/process.h	/^	const size_t Process::getID() const {$/;"	f	class:Process
+getName	lib/ktest/ktest.cpp	/^const char* KTest::getName() {$/;"	f	class:KTest
+getName	test/ktest.cpp	/^const char* KTest::getName() {$/;"	f	class:KTest
+getNumberOfFreePages	src/manager/nfsii.cpp	/^lba_t NFSII::getNumberOfFreePages() const {$/;"	f	class:NFSII
+getNumberOfPages	inc/device/storage.h	/^	inline const size_t Storage::getNumberOfPages() const {$/;"	f	class:Storage
+getNumberOfProgramSections	src/manager/system.cpp	/^	int getNumberOfProgramSections() {$/;"	f	class:ELF
+getOffset	inc/device/storage.h	/^	inline const size_t Storage::getOffset() const {$/;"	f	class:Storage
+getOffset	inc/device/video.h	/^	inline uint16_t Video::getOffset() const {$/;"	f	class:Video
+getOffset	inc/manager/file.h	/^		inline const size_t getOffset() const {$/;"	f	class:File
+getPageSize	src/manager/system.cpp	/^	size_t getPageSize() {$/;"	f	class:ProgramSection
+getPosition	inc/manager/file.h	/^		inline const lba_t getPosition() const {$/;"	f	class:File
+getProgramSection	src/manager/system.cpp	/^	const ProgramSection getProgramSection( int index ) const {$/;"	f	class:ELF
+getReservedSize	inc/manager/memory.h	/^	size_t Memory::getReservedSize() const {$/;"	f	class:Memory
+getSize	inc/device/storage.h	/^	inline const size_t Storage::getSize() const {$/;"	f	class:Storage
+getSize	inc/manager/file.h	/^		inline const size_t getSize() const {$/;"	f	class:File
+getSize	inc/manager/file.h	/^		inline size_t getSize() const {$/;"	f	class:FileTable
+getSize	inc/manager/memory.h	/^	size_t Memory::getSize() const {$/;"	f	class:Memory
+getSize	inc/util/dlinkedlist.h	/^	template <class T> const size_t DLinkedList<T>::getSize() const {$/;"	f	class:DLinkedList
+getSize	src/manager/system.cpp	/^	size_t getSize() {$/;"	f	class:ProgramSection
+getStorage	inc/manager/filesystem.h	/^inline Storage& FileSystem::getStorage() const {$/;"	f	class:FileSystem
+getTextColor	inc/device/video.h	/^	inline Video::tColor Video::getTextColor() const {$/;"	f	class:Video
+getVBuffer	inc/device/vesa.h	/^	char* getVBuffer() {$/;"	f	class:Vesa
+getVirtualAddress	src/manager/system.cpp	/^	uintptr_t getVirtualAddress() {$/;"	f	class:ProgramSection
+getpid	src/arch/posix.cpp	/^extern "C" int getpid() {$/;"	f
+gettimeofday	src/arch/posix.cpp	/^extern "C" int gettimeofday( struct timeval *p, struct timezone *z ) {$/;"	f
+granularity	inc/device/vesa.h	/^	uint16_t granularity;    \/\/ Window granularity in KB$/;"	m	struct:VBEMode
+greenFieldPos	inc/device/vesa.h	/^	uint8_t greenFieldPos;$/;"	m	struct:VBEMode
+greenMaskSize	inc/device/vesa.h	/^	uint8_t greenMaskSize;$/;"	m	struct:VBEMode
+height	inc/device/vesa.h	/^	uint16_t height;$/;"	m	struct:VBEMode
+height	inc/device/vesa.h	/^	unsigned short height;$/;"	m	class:Vesa
+height	inc/device/vesa.h	/^	unsigned short height;$/;"	m	struct:VesaMode
+heightChar	inc/device/vesa.h	/^	uint8_t heightChar;      \/\/ Height of character cell in pixels$/;"	m	struct:VBEMode
+hi	emu/nativeemu/nativeemu.cpp	/^    struct { short lo, hi; } hz240counter = { 0,0 };$/;"	m	struct:APU::__anon4	file:
+hi	emu/nesemu.cc	/^    struct { short lo, hi; } hz240counter = { 0,0 };$/;"	m	struct:APU::__anon4	file:
+hold	emu/nativeemu/nativeemu.cpp	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+hold	emu/nesemu.cc	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+hz240counter	emu/nativeemu/nativeemu.cpp	/^    struct { short lo, hi; } hz240counter = { 0,0 };$/;"	m	namespace:APU	typeref:struct:APU::__anon4	file:
+hz240counter	emu/nesemu.cc	/^    struct { short lo, hi; } hz240counter = { 0,0 };$/;"	m	namespace:APU	typeref:struct:APU::__anon4	file:
+id	inc/device/vesa.h	/^	unsigned short id;$/;"	m	struct:VesaMode
+id	inc/manager/file.h	/^		fid_t id;$/;"	m	class:File
+id	inc/manager/process.h	/^		size_t id;$/;"	m	class:Process
+id1	test/dlinkedlist.test.cpp	/^	size_t id1 = list.pushf(1); \/\/ 1$/;"	v
+id2	test/dlinkedlist.test.cpp	/^	size_t id2 = list.pushb(2); \/\/ 12$/;"	v
+id3	test/dlinkedlist.test.cpp	/^	size_t id3 = list.pushf(3); \/\/ 312$/;"	v
+id4	test/dlinkedlist.test.cpp	/^	size_t id4 = list.pushf(4); \/\/ 4312$/;"	v
+id5	test/dlinkedlist.test.cpp	/^	size_t id5 = list.pushb(5); \/\/ 43125$/;"	v
+inb	inc/device/device.h	/^	uint8_t Device::inb( uint16_t port ) const {$/;"	f	class:Device
+incbin	src/disk.s	/^incbin "bin\/disk.img"$/;"	l
+index	emu/nativeemu/nativeemu.cpp	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+index	emu/nesemu.cc	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+init	inc/device/vesa.h	/^	void init() {$/;"	f	struct:VBEInfo
+init	lib/ktest/ktest.cpp	/^void KTest::init( OutputDevice &device ) {$/;"	f	class:KTest
+init	src/manager/manager.cpp	/^void Manager::init() {$/;"	f	class:Manager
+init	src/manager/scheduler.cpp	/^void Scheduler::init() {$/;"	f	class:Scheduler
+init	src/manager/syscalls.cpp	/^void SysCalls::init( System *sys ) {$/;"	f	class:SysCalls
+init	test/ktest.cpp	/^void KTest::init( OutputDevice &device ) {$/;"	f	class:KTest
+input	inc/manager/system.h	/^	static InputDevice *input;$/;"	m	class:System
+input	src/manager/system.cpp	/^InputDevice*   System::input  = 0;$/;"	m	class:System	file:
+inputfn	emu/nativeemu/nativeemu.cpp	/^static const char* inputfn = ".\/nes.fmv\\0";$/;"	v	file:
+inputfn	emu/nesemu.cc	/^static const char* inputfn = ".\/nes.fmv\\0";$/;"	v	file:
+insert	inc/manager/file.h	/^		fid_t insert( File *file ) {$/;"	f	class:FileTable
+insert	src/util/keybuffer.cpp	/^void KeyBuffer::insert( uint16_t key ) {$/;"	f	class:KeyBuffer
+insertNodeAt	src/manager/nfsii.cpp	/^bool NFSII::insertNodeAt( tNode& node, tNode& directory ) {$/;"	f	class:NFSII
+install	src/manager/system.cpp	/^void System::install( FileSystem &fs ) {$/;"	f	class:System
+install	src/manager/system.cpp	/^void System::install( IODevice &device ) {$/;"	f	class:System
+install	src/manager/system.cpp	/^void System::install( InputDevice &device ) {$/;"	f	class:System
+install	src/manager/system.cpp	/^void System::install( Manager &service ) {$/;"	f	class:System
+install	src/manager/system.cpp	/^void System::install( Memory &memory ) {$/;"	f	class:System
+install	src/manager/system.cpp	/^void System::install( OutputDevice &device ) {$/;"	f	class:System
+install	src/manager/system.cpp	/^void System::install( Scheduler &scheduler ) {$/;"	f	class:System
+install	src/manager/system.cpp	/^void System::install( SysCalls &sysCalls ) {$/;"	f	class:System
+intr	emu/nativeemu/nativeemu.cpp	/^    bool reset=true, nmi=false, nmi_edge_detected=false, intr=false;$/;"	m	namespace:CPU	file:
+intr	emu/nesemu.cc	/^    bool reset=true, nmi=false, nmi_edge_detected=false, intr=false;$/;"	m	namespace:CPU	file:
+ioaddr	emu/nativeemu/nativeemu.cpp	/^    u16 tileattr, tilepat, ioaddr;$/;"	m	namespace:PPU	file:
+ioaddr	emu/nesemu.cc	/^    u16 tileattr, tilepat, ioaddr;$/;"	m	namespace:PPU	file:
+isAValidFileName	src/manager/nfsii.cpp	/^bool NFSII::isAValidFileName( const char *name ) {$/;"	f	class:NFSII
+isAValidNode	inc/util/dlinkedlist.h	/^	template <class T> bool DLinkedList<T>::isAValidNode( tNode *node ) {$/;"	f	class:DLinkedList
+isEOF	inc/manager/file.h	/^		bool isEOF() {$/;"	f	class:File
+isEmpty	src/util/keybuffer.cpp	/^bool KeyBuffer::isEmpty() const {$/;"	f	class:KeyBuffer
+isLoadable	src/manager/system.cpp	/^	bool isLoadable() {$/;"	f	class:ProgramSection
+isOpen	src/manager/filesystem.cpp	/^bool FileSystem::isOpen( fid_t fd ) {$/;"	f	class:FileSystem
+isReady	inc/device/vesa.h	/^	bool isReady() {$/;"	f	class:Vesa
+isReady	src/device/storage.cpp	/^bool Storage::isReady() {$/;"	f	class:Storage
+isReady	src/device/uart.cpp	/^bool UART::isReady() {$/;"	f	class:UART
+isReady	src/device/video.cpp	/^bool Video::isReady() {$/;"	f	class:Video
+isValid	inc/device/vesa.h	/^	bool isValid() {$/;"	f	struct:VBEInfo
+isValid	inc/device/vesa.h	/^	bool isValid() {$/;"	f	struct:VBEMode
+isValid	inc/manager/nfsii.h	/^				bool isValid() {$/;"	f	struct:NFSII::tNode
+isValid	src/manager/system.cpp	/^	bool isValid() {$/;"	f	class:ELF
+isatty	src/arch/posix.cpp	/^extern "C" int isatty( int file ) {$/;"	f
+isr	src/arch/isr.s	/^isr:$/;"	l
+isr	src/device/device.cpp	/^void Device::isr( const SSID ssid, Registers &registers ) {$/;"	f	class:Device
+isr	src/device/uart.cpp	/^void UART::isr( const SSID ssid, Registers &registers ) {$/;"	f	class:UART
+isr	src/manager/manager.cpp	/^void Manager::isr( const SSID ssid, Registers &registers ) {$/;"	f	class:Manager
+isr	src/manager/scheduler.cpp	/^void Scheduler::isr( const SSID ssid, Registers &registers ) {$/;"	f	class:Scheduler
+isr	src/manager/system.cpp	/^void System::isr( const SSID ssid, Registers &registers ) {$/;"	f	class:System
+joy_current	emu/nativeemu/nativeemu.cpp	/^    int joy_current[2]={0,0}, joy_next[2]={0,0}, joypos[2]={0,0};$/;"	m	namespace:IO	file:
+joy_current	emu/nesemu.cc	/^    int joy_current[2]={0,0}, joy_next[2]={0,0}, joypos[2]={0,0};$/;"	m	namespace:IO	file:
+joy_next	emu/nativeemu/nativeemu.cpp	/^    int joy_current[2]={0,0}, joy_next[2]={0,0}, joypos[2]={0,0};$/;"	m	namespace:IO	file:
+joy_next	emu/nesemu.cc	/^    int joy_current[2]={0,0}, joy_next[2]={0,0}, joypos[2]={0,0};$/;"	m	namespace:IO	file:
+joypos	emu/nativeemu/nativeemu.cpp	/^    int joy_current[2]={0,0}, joy_next[2]={0,0}, joypos[2]={0,0};$/;"	m	namespace:IO	file:
+joypos	emu/nesemu.cc	/^    int joy_current[2]={0,0}, joy_next[2]={0,0}, joypos[2]={0,0};$/;"	m	namespace:IO	file:
+keys	inc/manager/file.h	/^		size_t* keys;$/;"	m	class:FileTable
+kill	src/arch/posix.cpp	/^extern "C" int kill( int pid, int sig ){$/;"	f
+kill	src/manager/scheduler.cpp	/^bool Scheduler::kill( const size_t pid ) {$/;"	f	class:Scheduler
+lRotate	inc/util/dlinkedlist.h	/^	template <class T> void DLinkedList<T>::lRotate() {$/;"	f	class:DLinkedList
+lastSize	test/syscalls.test.cpp	/^	uintr_t lastSize;$/;"	v
+lastSize	test/test.cpp	/^	uintr_t lastSize;$/;"	v
+lba_t	inc/device/storage.h	/^typedef uint64_t lba_t;$/;"	t
+len	inc/types.h	/^	uint64_t len;$/;"	m	struct:tMemoryMap
+length_counter	emu/nativeemu/nativeemu.cpp	/^        int length_counter, linear_counter, address, envelope;$/;"	m	struct:APU::channel	file:
+length_counter	emu/nesemu.cc	/^        int length_counter, linear_counter, address, envelope;$/;"	m	struct:APU::channel	file:
+level	emu/nativeemu/nativeemu.cpp	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+level	emu/nesemu.cc	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+linear_counter	emu/nativeemu/nativeemu.cpp	/^        int length_counter, linear_counter, address, envelope;$/;"	m	struct:APU::channel	file:
+linear_counter	emu/nesemu.cc	/^        int length_counter, linear_counter, address, envelope;$/;"	m	struct:APU::channel	file:
+link	src/arch/posix.cpp	/^extern "C" int link( const char *oldPath, const char *newPath ){$/;"	f
+list	test/dlinkedlist.test.cpp	/^	DLinkedList <int>list;$/;"	v
+listOfModesPtr	inc/device/vesa.h	/^	uint32_t listOfModesPtr;$/;"	m	struct:VBEInfo
+listOfModules	inc/types.h	/^	const tModuleInfo* listOfModules;$/;"	m	struct:tMultibootInfo
+listeners	inc/ilistener.h	/^			static std::set<InterruptionListener*> listeners[NUMBER_OF_ISR]; \/**< Set of all system interruptions. *\/$/;"	m	class:InterruptionListener
+listeners	src/ilistener.cpp	/^std::set<InterruptionListener*> InterruptionListener::listeners[NUMBER_OF_ISR];$/;"	m	class:InterruptionListener	file:
+lo	emu/nativeemu/nativeemu.cpp	/^    struct { short lo, hi; } hz240counter = { 0,0 };$/;"	m	struct:APU::__anon4	file:
+lo	emu/nesemu.cc	/^    struct { short lo, hi; } hz240counter = { 0,0 };$/;"	m	struct:APU::__anon4	file:
+load	src/manager/system.cpp	/^	uintptr_t load( Memory &memory ) {$/;"	f	class:ProgramSection
+loadState	src/manager/process.cpp	/^void Process::loadState( Registers &registers ) {$/;"	f	class:Process
+log	inc/manager/system.h	/^template <typename T> void System::log( T data ) {$/;"	f	class:System
+log	inc/manager/system.h	/^template <typename T> void System::log( T data, uint8_t base ) {$/;"	f	class:System
+lowerMemory	inc/types.h	/^	const uint32_t lowerMemory;$/;"	m	struct:tMultibootInfo
+ls	src/manager/nfsii.cpp	/^void NFSII::ls( const char *path ) {$/;"	f	class:NFSII
+lseek	src/arch/posix.cpp	/^extern "C" int lseek( int fd, int offset, int whence ) {$/;"	f
+m	test/memory.test.cpp	/^	Memory m;$/;"	v
+magic	inc/types.h	/^	const uint32_t magic;$/;"	m	struct:tMultibootHeader
+magic	src/arch/multiboot.s	/^	magic         DD 0x1BADB002$/;"	d
+main	emu/nativeemu/nativeemu.cpp	/^int main() {$/;"	f
+main	emu/nesemu.cc	/^int main()$/;"	f
+main	main.cpp	/^int main() {$/;"	f
+main	src/kernel.cpp	/^int main() {$/;"	f
+main	test/kernel.test.cpp	/^int main() {$/;"	f
+main	test/test.cpp	/^int main() {$/;"	f
+main	util/diskmaker/diskmaker.cpp	/^int main( int argc, char* argv[] ) {$/;"	f
+mappernum	emu/nativeemu/nativeemu.cpp	/^    unsigned mappernum;$/;"	m	namespace:GamePak	file:
+mappernum	emu/nesemu.cc	/^    unsigned mappernum;$/;"	m	namespace:GamePak	file:
+mask	emu/nativeemu/nativeemu.cpp	/^    enum { mask = (1u << nbits) - 1u };$/;"	e	enum:RegBit::__anon1	file:
+mask	emu/nesemu.cc	/^    enum { mask = (1u << nbits) - 1u };$/;"	e	enum:RegBit::__anon1	file:
+maxInt	test/storage.test.cpp	/^	const char* maxInt = "4294967295";$/;"	v
+mbInfo	inc/types.h	/^	tMultibootInfo *mbInfo;$/;"	m	struct:tMultibootHeader
+mbInfo	src/arch/multiboot.s	/^	mbInfo        DD 0$/;"	d
+memory	inc/manager/system.h	/^	Memory *memory;$/;"	m	class:System
+memoryModel	inc/device/vesa.h	/^	uint8_t memoryModel;$/;"	m	struct:VBEMode
+memorySize	inc/device/vesa.h	/^	uint16_t memorySize;$/;"	m	struct:VBEInfo
+mkdir	src/manager/nfsii.cpp	/^bool NFSII::mkdir( const char *path, size_t size ) {$/;"	f	class:NFSII
+mmap	emu/nativeemu/nativeemu.cpp	/^    u8& mmap(int i)$/;"	f	namespace:PPU
+mmap	emu/nesemu.cc	/^    u8& mmap(int i)$/;"	f	namespace:PPU
+mmapLength	inc/types.h	/^	const uint32_t mmapLength;$/;"	m	struct:tMultibootInfo
+mmapPtr	inc/types.h	/^	tMemoryMap* mmapPtr;$/;"	m	struct:tMultibootInfo
+modEnd	inc/types.h	/^	const uint32_t modEnd;$/;"	m	struct:tModuleInfo
+modStart	inc/types.h	/^	const uint32_t modStart;$/;"	m	struct:tModuleInfo
+modeAttrib	inc/device/vesa.h	/^	uint16_t modeAttrib;     \/\/ Mode attributes$/;"	m	struct:VBEMode
+modes	inc/device/vesa.h	/^	std::list<VesaMode*> modes;$/;"	m	class:Vesa
+name	inc/manager/nfsii.h	/^				char name[NFS_NAME_LENGTH];$/;"	m	struct:NFSII::tNode
+name	inc/manager/nfsii.h	/^				char name[NFS_NAME_LENGTH];$/;"	m	struct:NFSII::tSubNode
+name	inc/types.h	/^	const uint8_t* name;$/;"	m	struct:tMultibootInfo
+name	lib/ktest/ktest.h	/^		const char* name;$/;"	m	class:KTest
+name	test/filesystem.test.cpp	/^	char name[2] = {0};$/;"	v
+name	test/ktest.h	/^		const char* name;$/;"	m	class:KTest
+newMemoryBlock	src/manager/memory.cpp	/^Memory::tBlock* Memory::newMemoryBlock( uintptr_t addr, size_t size ) {$/;"	f	class:Memory
+next	inc/manager/memory.h	/^			tBlock* next;$/;"	m	struct:Memory::tBlock
+next	inc/manager/nfsii.h	/^				lba_t next;$/;"	m	struct:NFSII::tStorageBlock
+next	inc/util/dlinkedlist.h	/^			tNode *next;$/;"	m	struct:DLinkedList::tNode
+nlib	inc/nlib.h	/^	namespace nlib {$/;"	n
+nmi	emu/nativeemu/nativeemu.cpp	/^    bool reset=true, nmi=false, nmi_edge_detected=false, intr=false;$/;"	m	namespace:CPU	file:
+nmi	emu/nesemu.cc	/^    bool reset=true, nmi=false, nmi_edge_detected=false, intr=false;$/;"	m	namespace:CPU	file:
+nmi_edge_detected	emu/nativeemu/nativeemu.cpp	/^    bool reset=true, nmi=false, nmi_edge_detected=false, intr=false;$/;"	m	namespace:CPU	file:
+nmi_edge_detected	emu/nesemu.cc	/^    bool reset=true, nmi=false, nmi_edge_detected=false, intr=false;$/;"	m	namespace:CPU	file:
+numberOfBanks	inc/device/vesa.h	/^	uint8_t numberOfBanks;$/;"	m	struct:VBEMode
+numberOfChildren	inc/manager/nfsii.h	/^				uint32_t numberOfChildren;$/;"	m	struct:NFSII::tNode
+numberOfImagePages	inc/device/vesa.h	/^	uint8_t numberOfImagePages; \/\/ Number of image pages (less one) that will fit in video RAM$/;"	m	struct:VBEMode
+numberOfModules	inc/types.h	/^	const uint32_t numberOfModules;$/;"	m	struct:tMultibootInfo
+numberOfPlanes	inc/device/vesa.h	/^	uint8_t numberOfPlanes;$/;"	m	struct:VBEMode
+numberOfTests	lib/ktest/ktest.cpp	/^size_t KTest::numberOfTests = 0;$/;"	m	class:KTest	file:
+numberOfTests	lib/ktest/ktest.h	/^		static size_t numberOfTests;$/;"	m	class:KTest
+numberOfTests	test/ktest.cpp	/^size_t KTest::numberOfTests = 0;$/;"	m	class:KTest	file:
+numberOfTests	test/ktest.h	/^		static size_t numberOfTests;$/;"	m	class:KTest
+o	emu/nativeemu/nativeemu.cpp	962;"	d	file:
+o	emu/nativeemu/nativeemu.cpp	970;"	d	file:
+o	emu/nesemu.cc	948;"	d	file:
+o	emu/nesemu.cc	956;"	d	file:
+oem	inc/device/vesa.h	/^	uint32_t oem;$/;"	m	struct:VBEInfo
+offscreenMemory	inc/device/vesa.h	/^	uint32_t offscreenMemory;$/;"	m	struct:VBEMode
+offscreenSize	inc/device/vesa.h	/^	uint16_t offscreenSize;$/;"	m	struct:VBEMode
+offset	inc/device/storage.h	/^			size_t offset;$/;"	m	class:Storage
+offset	inc/device/video.h	/^		int offset;$/;"	m	class:Video
+offset	inc/manager/file.h	/^		size_t offset;$/;"	m	class:File
+offset_toggle	emu/nativeemu/nativeemu.cpp	/^    bool even_odd_toggle=false, offset_toggle=false;$/;"	m	namespace:PPU	file:
+offset_toggle	emu/nesemu.cc	/^    bool even_odd_toggle=false, offset_toggle=false;$/;"	m	namespace:PPU	file:
+open	src/arch/posix.cpp	/^extern "C" int open( const char *path, int flags, int mode ) {$/;"	f
+open	src/manager/nfsii.cpp	/^fid_t NFSII::open( const char *path ) {$/;"	f	class:NFSII
+open_bus	emu/nativeemu/nativeemu.cpp	/^    int read_buffer=0, open_bus=0, open_bus_decay_timer=0;$/;"	m	namespace:PPU	file:
+open_bus	emu/nesemu.cc	/^    int read_buffer=0, open_bus=0, open_bus_decay_timer=0;$/;"	m	namespace:PPU	file:
+open_bus_decay_timer	emu/nativeemu/nativeemu.cpp	/^    int read_buffer=0, open_bus=0, open_bus_decay_timer=0;$/;"	m	namespace:PPU	file:
+open_bus_decay_timer	emu/nesemu.cc	/^    int read_buffer=0, open_bus=0, open_bus_decay_timer=0;$/;"	m	namespace:PPU	file:
+operator ++	emu/nativeemu/nativeemu.cpp	/^    RegBit& operator++ ()     { return *this = *this + 1; }$/;"	f	struct:RegBit
+operator ++	emu/nativeemu/nativeemu.cpp	/^    unsigned operator++ (int) { unsigned r = *this; ++*this; return r; }$/;"	f	struct:RegBit
+operator ++	emu/nesemu.cc	/^    RegBit& operator++ ()     { return *this = *this + 1; }$/;"	f	struct:RegBit
+operator ++	emu/nesemu.cc	/^    unsigned operator++ (int) { unsigned r = *this; ++*this; return r; }$/;"	f	struct:RegBit
+operator =	emu/nativeemu/nativeemu.cpp	/^    RegBit& operator=(T2 val)$/;"	f	struct:RegBit
+operator =	emu/nesemu.cc	/^    RegBit& operator=(T2 val)$/;"	f	struct:RegBit
+operator delete	src/core.cpp	/^void operator delete( void *ptr ) {$/;"	f
+operator delete[]	src/core.cpp	/^void operator delete[]( void *ptr ) {$/;"	f
+operator new	src/core.cpp	/^void* operator new( const size_t size ) {$/;"	f
+operator new[]	src/core.cpp	/^void* operator new[]( const size_t size ) {$/;"	f
+operator unsigned	emu/nativeemu/nativeemu.cpp	/^    operator unsigned() const { return (data >> bitno) & mask; }$/;"	f	struct:RegBit
+operator unsigned	emu/nesemu.cc	/^    operator unsigned() const { return (data >> bitno) & mask; }$/;"	f	struct:RegBit
+out	lib/ktest/ktest.cpp	/^OutputDevice* KTest::out = 0;$/;"	m	class:KTest	file:
+out	lib/ktest/ktest.h	/^		static OutputDevice *out;$/;"	m	class:KTest
+out	test/ktest.cpp	/^OutputDevice* KTest::out = 0;$/;"	m	class:KTest	file:
+out	test/ktest.h	/^		static OutputDevice *out;$/;"	m	class:KTest
+outb	inc/device/device.h	/^	void Device::outb( uint16_t port, uint8_t value ) const {$/;"	f	class:Device
+output	inc/manager/system.h	/^	static OutputDevice *output;$/;"	m	class:System
+output	src/manager/system.cpp	/^OutputDevice*  System::output = 0;$/;"	m	class:System	file:
+outw	inc/device/device.h	/^	void Device::outw( uint16_t port, uint16_t value ) const {$/;"	f	class:Device
+pList	inc/manager/scheduler.h	/^		DLinkedList<Process*> pList;$/;"	m	class:Scheduler
+pad	inc/types.h	/^	const uint32_t pad;$/;"	m	struct:tModuleInfo
+pageBlock	test/memory.test.cpp	/^	uintptr_t pageBlock[200] = {0};$/;"	v
+pageBlock	test/memory.test.cpp	/^	uintptr_t pageBlock[5] = {0};$/;"	v
+pagedirectory	src/arch/mem.s	/^pagedirectory TIMES 1024 DD 0$/;"	l
+palette	emu/nativeemu/nativeemu.cpp	/^    u8 palette[32], OAM[256];$/;"	m	namespace:PPU	file:
+palette	emu/nesemu.cc	/^    u8 palette[32], OAM[256];$/;"	m	namespace:PPU	file:
+parent	inc/manager/nfsii.h	/^				lba_t parent;$/;"	m	struct:NFSII::tNode
+pat_addr	emu/nativeemu/nativeemu.cpp	/^    unsigned pat_addr, sprinpos, sproutpos, sprrenpos, sprtmp;$/;"	m	namespace:PPU	file:
+pat_addr	emu/nesemu.cc	/^    unsigned pat_addr, sprinpos, sproutpos, sprrenpos, sprtmp;$/;"	m	namespace:PPU	file:
+pattern	emu/nativeemu/nativeemu.cpp	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+pattern	emu/nesemu.cc	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+pause	src/manager/process.cpp	/^void Process::pause() {$/;"	f	class:Process
+pc	inc/registers.h	/^		uintr_t pc; \/\/ EIP$/;"	m	struct:Registers
+ph	src/manager/system.cpp	/^	Elf32_Phdr ph;$/;"	m	class:ProgramSection	file:
+phase	emu/nativeemu/nativeemu.cpp	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+phase	emu/nesemu.cc	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+popb	inc/util/dlinkedlist.h	/^	template <class T> T DLinkedList<T>::popb() {$/;"	f	class:DLinkedList
+popf	inc/util/dlinkedlist.h	/^	template <class T> T DLinkedList<T>::popf() {$/;"	f	class:DLinkedList
+port	inc/device/uart.h	/^		const uint16_t port;$/;"	m	class:UART
+position	inc/manager/file.h	/^		lba_t position;$/;"	m	class:File
+previous	inc/util/dlinkedlist.h	/^			tNode *previous;$/;"	m	struct:DLinkedList::tNode
+print	src/manager/memory.cpp	/^void Memory::print() {$/;"	f	class:Memory
+productNamePtr	inc/device/vesa.h	/^	uint32_t productNamePtr;$/;"	m	struct:VBEInfo
+productVersionPtr	inc/device/vesa.h	/^	uint32_t productVersionPtr;$/;"	m	struct:VBEInfo
+pushb	inc/util/dlinkedlist.h	/^	template <class T> const size_t DLinkedList<T>::pushb( T data ) {$/;"	f	class:DLinkedList
+pushf	inc/util/dlinkedlist.h	/^	template <class T> const size_t DLinkedList<T>::pushf( T data ) {$/;"	f	class:DLinkedList
+quantum	inc/manager/scheduler.h	/^		unsigned int quantum;$/;"	m	class:Scheduler
+quickSort	emu/quicksort.cpp	/^void quickSort( int arr[], int left, int right ) {$/;"	f
+r0	inc/registers.h	/^		uintr_t r0; \/\/ EAX$/;"	m	struct:Registers
+r1	inc/registers.h	/^		uintr_t r1; \/\/ EBX$/;"	m	struct:Registers
+r2	inc/registers.h	/^		uintr_t r2; \/\/ ECX$/;"	m	struct:Registers
+r3	inc/registers.h	/^		uintr_t r3; \/\/ EDX$/;"	m	struct:Registers
+r4	inc/registers.h	/^		uintr_t r4; \/\/ EBP$/;"	m	struct:Registers
+r5	inc/registers.h	/^		uintr_t r5; \/\/ EDI$/;"	m	struct:Registers
+r6	inc/registers.h	/^		uintr_t r6; \/\/ ESI$/;"	m	struct:Registers
+rRotate	inc/util/dlinkedlist.h	/^	template <class T> void DLinkedList<T>::rRotate() {$/;"	f	class:DLinkedList
+raw	emu/nativeemu/nativeemu.cpp	/^        RegBit<3,16,u32> raw;       \/\/ raw VRAM address (16-bit)$/;"	m	union:PPU::scrolltype	file:
+raw	emu/nativeemu/nativeemu.cpp	/^        u8 raw;$/;"	m	union:CPU::__anon5	file:
+raw	emu/nesemu.cc	/^        RegBit<3,16,u32> raw;       \/\/ raw VRAM address (16-bit)$/;"	m	union:PPU::scrolltype	file:
+raw	emu/nesemu.cc	/^        u8 raw;$/;"	m	union:CPU::__anon5	file:
+read	src/arch/posix.cpp	/^extern "C" int read( int fd, char *buffer, int len ) {$/;"	f
+read	src/device/inputdevice.cpp	/^size_t InputDevice::read( char* buffer, size_t size ) {$/;"	f	class:InputDevice
+read	src/device/storage.cpp	/^size_t Storage::read( char* dst, size_t size ) {$/;"	f	class:Storage
+read	src/device/storage.cpp	/^void Storage::read( char &dst ) {$/;"	f	class:Storage
+read	src/device/uart.cpp	/^void UART::read( char &c ) {$/;"	f	class:UART
+read	src/manager/filesystem.cpp	/^size_t FileSystem::read( fid_t fd, char* dst, size_t size ) {$/;"	f	class:FileSystem
+read_buffer	emu/nativeemu/nativeemu.cpp	/^    int read_buffer=0, open_bus=0, open_bus_decay_timer=0;$/;"	m	namespace:PPU	file:
+read_buffer	emu/nesemu.cc	/^    int read_buffer=0, open_bus=0, open_bus_decay_timer=0;$/;"	m	namespace:PPU	file:
+reboot	src/manager/system.cpp	/^void System::reboot() const {$/;"	f	class:System
+redFieldPos	inc/device/vesa.h	/^	uint8_t redFieldPos;$/;"	m	struct:VBEMode
+redMaskSize	inc/device/vesa.h	/^	uint8_t redMaskSize;$/;"	m	struct:VBEMode
+reg	emu/nativeemu/nativeemu.cpp	/^        } reg;$/;"	m	struct:APU::channel	typeref:union:APU::channel::__anon3	file:
+reg	emu/nativeemu/nativeemu.cpp	/^    } reg;$/;"	m	namespace:PPU	typeref:union:PPU::regtype	file:
+reg	emu/nesemu.cc	/^        } reg;$/;"	m	struct:APU::channel	typeref:union:APU::channel::__anon3	file:
+reg	emu/nesemu.cc	/^    } reg;$/;"	m	namespace:PPU	typeref:union:PPU::regtype	file:
+reg0	emu/nativeemu/nativeemu.cpp	/^            RegBit<0,8,u32> reg0;                 RegBit< 8,8,u32> reg1;          RegBit<16,8,u32> reg2;$/;"	m	union:APU::channel::__anon3	file:
+reg0	emu/nesemu.cc	/^            RegBit<0,8,u32> reg0;                 RegBit< 8,8,u32> reg1;          RegBit<16,8,u32> reg2;$/;"	m	union:APU::channel::__anon3	file:
+reg1	emu/nativeemu/nativeemu.cpp	/^            RegBit<0,8,u32> reg0;                 RegBit< 8,8,u32> reg1;          RegBit<16,8,u32> reg2;$/;"	m	union:APU::channel::__anon3	file:
+reg1	emu/nesemu.cc	/^            RegBit<0,8,u32> reg0;                 RegBit< 8,8,u32> reg1;          RegBit<16,8,u32> reg2;$/;"	m	union:APU::channel::__anon3	file:
+reg2	emu/nativeemu/nativeemu.cpp	/^            RegBit<0,8,u32> reg0;                 RegBit< 8,8,u32> reg1;          RegBit<16,8,u32> reg2;$/;"	m	union:APU::channel::__anon3	file:
+reg2	emu/nesemu.cc	/^            RegBit<0,8,u32> reg0;                 RegBit< 8,8,u32> reg1;          RegBit<16,8,u32> reg2;$/;"	m	union:APU::channel::__anon3	file:
+reg3	emu/nativeemu/nativeemu.cpp	/^            RegBit<0,4,u32> FixedVolume;          RegBit< 8,8,u32> PCMlength;     RegBit<24,8,u32> reg3;$/;"	m	union:APU::channel::__anon3	file:
+reg3	emu/nesemu.cc	/^            RegBit<0,4,u32> FixedVolume;          RegBit< 8,8,u32> PCMlength;     RegBit<24,8,u32> reg3;$/;"	m	union:APU::channel::__anon3	file:
+registers	inc/manager/process.h	/^		Registers registers;$/;"	m	class:Process
+regtype	emu/nativeemu/nativeemu.cpp	/^    union regtype \/\/ PPU register file$/;"	u	namespace:PPU	file:
+regtype	emu/nesemu.cc	/^    union regtype \/\/ PPU register file$/;"	u	namespace:PPU	file:
+remove	inc/manager/file.h	/^		File* remove( fid_t fid ) {$/;"	f	class:FileTable
+remove	inc/util/dlinkedlist.h	/^	template <class T> T DLinkedList<T>::remove( size_t id ) {$/;"	f	class:DLinkedList
+remove	src/util/keybuffer.cpp	/^uint16_t KeyBuffer::remove() {$/;"	f	class:KeyBuffer
+render_pixel	emu/nativeemu/nativeemu.cpp	/^    void render_pixel()$/;"	f	namespace:PPU
+render_pixel	emu/nesemu.cc	/^    void render_pixel()$/;"	f	namespace:PPU
+rendering_tick	emu/nativeemu/nativeemu.cpp	/^    void rendering_tick()$/;"	f	namespace:PPU
+rendering_tick	emu/nesemu.cc	/^    void rendering_tick()$/;"	f	namespace:PPU
+reserved0	inc/device/vesa.h	/^	uint8_t reserved0;$/;"	m	struct:VBEMode
+reservedMaskPos	inc/device/vesa.h	/^	uint8_t reservedMaskPos;$/;"	m	struct:VBEMode
+reservedMaskSize	inc/device/vesa.h	/^	uint8_t reservedMaskSize;$/;"	m	struct:VBEMode
+reservedSize	inc/manager/memory.h	/^		size_t reservedSize;$/;"	m	class:Memory
+reset	emu/nativeemu/nativeemu.cpp	/^    bool reset=true, nmi=false, nmi_edge_detected=false, intr=false;$/;"	m	namespace:CPU	file:
+reset	emu/nesemu.cc	/^    bool reset=true, nmi=false, nmi_edge_detected=false, intr=false;$/;"	m	namespace:CPU	file:
+reset	inc/device/vesa.h	/^	void reset() {$/;"	f	class:Vesa
+reset	src/device/outputdevice.cpp	/^void OutputDevice::reset() {$/;"	f	class:OutputDevice
+reset	src/device/video.cpp	/^void Video::reset() {$/;"	f	class:Video
+result	test/syscalls.test.cpp	/^	uintr_t result;$/;"	v
+result	test/test.cpp	/^	uintr_t result;$/;"	v
+rm	src/manager/nfsii.cpp	/^bool NFSII::rm( const char *path ) {$/;"	f	class:NFSII
+run	lib/ktest/ktest.cpp	/^void KTest::run() {$/;"	f	class:KTest
+run	test/ktest.cpp	/^void KTest::run() {$/;"	f	class:KTest
+s	emu/nativeemu/nativeemu.cpp	/^	char s[ 256 * 240 * 3 ];$/;"	m	namespace:IO	file:
+s	emu/nesemu.cc	/^	char s[ 256 * 240 * 3 ];$/;"	m	namespace:IO	file:
+s	emu/nesemu.cc	771;"	d	file:
+s	emu/nesemu.cc	778;"	d	file:
+s8	emu/nativeemu/nativeemu.cpp	/^typedef  int_least8_t   s8;$/;"	t	file:
+s8	emu/nesemu.cc	/^typedef  int_least8_t   s8;$/;"	t	file:
+saveState	src/manager/process.cpp	/^void Process::saveState( Registers &registers ) {$/;"	f	class:Process
+sbrk	src/arch/posix.cpp	/^extern "C" caddr_t sbrk( int incr ) {$/;"	f
+scanline	emu/nativeemu/nativeemu.cpp	/^    int scanline=241, x=0, scanline_end=341, VBlankState=0, cycle_counter=0;$/;"	m	namespace:PPU	file:
+scanline	emu/nesemu.cc	/^    int scanline=241, x=0, scanline_end=341, VBlankState=0, cycle_counter=0;$/;"	m	namespace:PPU	file:
+scanline_end	emu/nativeemu/nativeemu.cpp	/^    int scanline=241, x=0, scanline_end=341, VBlankState=0, cycle_counter=0;$/;"	m	namespace:PPU	file:
+scanline_end	emu/nesemu.cc	/^    int scanline=241, x=0, scanline_end=341, VBlankState=0, cycle_counter=0;$/;"	m	namespace:PPU	file:
+scheduler	inc/manager/system.h	/^	Scheduler *scheduler;$/;"	m	class:System
+scroll	emu/nativeemu/nativeemu.cpp	/^    } scroll, vaddr;$/;"	m	namespace:PPU	typeref:union:PPU::scrolltype	file:
+scroll	emu/nesemu.cc	/^    } scroll, vaddr;$/;"	m	namespace:PPU	typeref:union:PPU::scrolltype	file:
+scrollDown	src/device/video.cpp	/^void Video::scrollDown() {$/;"	f	class:Video
+scrolltype	emu/nativeemu/nativeemu.cpp	/^    union scrolltype$/;"	u	namespace:PPU	file:
+scrolltype	emu/nesemu.cc	/^    union scrolltype$/;"	u	namespace:PPU	file:
+seek	src/device/storage.cpp	/^bool Storage::seek( const lba_t lba ) {$/;"	f	class:Storage
+seek	src/device/video.cpp	/^void Video::seek( const uint16_t offset ) {$/;"	f	class:Video
+seek	src/manager/filesystem.cpp	/^bool FileSystem::seek( fid_t fd, const size_t offset ) {$/;"	f	class:FileSystem
+segmentA	inc/device/vesa.h	/^	uint16_t segmentA;       \/\/ Start segment of window A (0000h if not supported)$/;"	m	struct:VBEMode
+segmentB	inc/device/vesa.h	/^	uint16_t segmentB;       \/\/ Start segment of window B (0000h if not supported)$/;"	m	struct:VBEMode
+setBgColor	inc/device/video.h	/^	inline void Video::setBgColor( tColor color ) {$/;"	f	class:Video
+setCapacity	inc/manager/file.h	/^		inline void setCapacity( size_t capacity ) {$/;"	f	class:File
+setCursorPosition	inc/device/video.h	/^	inline void Video::setCursorPosition( const uint16_t x, const uint16_t y ) {$/;"	f	class:Video
+setDefaultError	inc/manager/system.h	/^inline void System::setDefaultError( OutputDevice &error ) {$/;"	f	class:System
+setDefaultInput	inc/manager/system.h	/^inline void System::setDefaultInput( InputDevice &input ) {$/;"	f	class:System
+setDefaultOutput	inc/manager/system.h	/^inline void System::setDefaultOutput( OutputDevice &output ) {$/;"	f	class:System
+setHeight	inc/device/vesa.h	/^	void setHeight( unsigned short height ) {$/;"	f	class:Vesa
+setID	inc/manager/file.h	/^		inline void setID( fid_t id ) {$/;"	f	class:File
+setID	inc/manager/process.h	/^	void Process::setID( const size_t id ) {$/;"	f	class:Process
+setOffset	inc/manager/file.h	/^		inline void setOffset( const size_t offset ) {$/;"	f	class:File
+setPosition	inc/manager/file.h	/^		inline void setPosition( const lba_t position ) {$/;"	f	class:File
+setTextColor	inc/device/video.h	/^	inline void Video::setTextColor( const tColor color ) {$/;"	f	class:Video
+setVideoMode	inc/device/vesa.h	/^	bool setVideoMode( VesaMode *mode ) {$/;"	f	class:Vesa
+setWidth	inc/device/vesa.h	/^	void setWidth( unsigned short width ) {$/;"	f	class:Vesa
+shift	src/device/storage.cpp	/^bool Storage::shift( const int displacement ) {$/;"	f	class:Storage
+shiftDisabledMap	inc/device/keyboard.h	/^		static uint8_t shiftDisabledMap[];$/;"	m	class:Keyboard
+shiftEnabledMap	inc/device/keyboard.h	/^		static uint8_t shiftEnabledMap[];$/;"	m	class:Keyboard
+signature	inc/device/vesa.h	/^	char signature[4];$/;"	m	struct:VBEInfo
+signature	inc/manager/nfsii.h	/^				uint32_t signature;$/;"	m	struct:NFSII::tBootNode
+signature	inc/manager/nfsii.h	/^				uint32_t signature;$/;"	m	struct:NFSII::tNode
+size	inc/device/storage.h	/^			size_t size;$/;"	m	class:Storage
+size	inc/manager/file.h	/^		size_t size;$/;"	m	class:File
+size	inc/manager/memory.h	/^			size_t size;$/;"	m	struct:Memory::tBlock
+size	inc/manager/memory.h	/^		size_t size;$/;"	m	class:Memory
+size	inc/manager/nfsii.h	/^				lba_t size;$/;"	m	struct:NFSII::tBootNode
+size	inc/manager/nfsii.h	/^				lba_t size;$/;"	m	struct:NFSII::tStorageBlock
+size	inc/manager/nfsii.h	/^				uint32_t size;$/;"	m	struct:NFSII::tNode
+size	inc/types.h	/^	uint32_t size;$/;"	m	struct:tMemoryMap
+size	inc/util/dlinkedlist.h	/^		size_t size;$/;"	m	class:DLinkedList
+size	inc/util/keybuffer.h	/^			volatile uint16_t size;$/;"	m	class:KeyBuffer
+size	test/filesystem.test.cpp	/^	size_t size = 0;$/;"	v
+size	test/filesystem.test.cpp	/^	size_t size = fs.getNumberOfFreePages();$/;"	v
+size	test/filesystem.test.cpp	/^	size_t size, capacity;$/;"	v
+size	test/kernel.test.cpp	/^	const int size = 40;$/;"	v
+size	test/test.cpp	/^	const int size = 40;$/;"	v
+sleep	src/arch/posix.cpp	/^extern "C" int sleep( unsigned int seconds ) {$/;"	f
+sp	inc/registers.h	/^		uintr_t sp; \/\/ ESP$/;"	m	struct:Registers
+sprindex	emu/nativeemu/nativeemu.cpp	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+sprindex	emu/nesemu.cc	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+sprinpos	emu/nativeemu/nativeemu.cpp	/^    unsigned pat_addr, sprinpos, sproutpos, sprrenpos, sprtmp;$/;"	m	namespace:PPU	file:
+sprinpos	emu/nesemu.cc	/^    unsigned pat_addr, sprinpos, sproutpos, sprrenpos, sprtmp;$/;"	m	namespace:PPU	file:
+sproutpos	emu/nativeemu/nativeemu.cpp	/^    unsigned pat_addr, sprinpos, sproutpos, sprrenpos, sprtmp;$/;"	m	namespace:PPU	file:
+sproutpos	emu/nesemu.cc	/^    unsigned pat_addr, sprinpos, sproutpos, sprrenpos, sprtmp;$/;"	m	namespace:PPU	file:
+sprrenpos	emu/nativeemu/nativeemu.cpp	/^    unsigned pat_addr, sprinpos, sproutpos, sprrenpos, sprtmp;$/;"	m	namespace:PPU	file:
+sprrenpos	emu/nesemu.cc	/^    unsigned pat_addr, sprinpos, sproutpos, sprrenpos, sprtmp;$/;"	m	namespace:PPU	file:
+sprtmp	emu/nativeemu/nativeemu.cpp	/^    unsigned pat_addr, sprinpos, sproutpos, sprrenpos, sprtmp;$/;"	m	namespace:PPU	file:
+sprtmp	emu/nesemu.cc	/^    unsigned pat_addr, sprinpos, sproutpos, sprrenpos, sprtmp;$/;"	m	namespace:PPU	file:
+start	emu/nativeemu/nativeemu.cpp	/^void start() {$/;"	f
+start	src/kernel.cpp	/^	void start() {$/;"	f	class:SimpleKernel
+start	src/manager/process.cpp	/^void Process::start() {$/;"	f	class:Process
+start	src/manager/scheduler.cpp	/^bool Scheduler::start( Process &process ) {$/;"	f	class:Scheduler
+start	src/manager/system.cpp	/^void System::start() {$/;"	f	class:System
+startListening	src/ilistener.cpp	/^void InterruptionListener::startListening( SSID ssid ) {$/;"	f	class:InterruptionListener
+stat	src/arch/posix.cpp	/^extern "C" int stat( const char *path, struct stat *st ) {$/;"	f
+status	emu/nativeemu/nativeemu.cpp	/^        RegBit<0,8,u32> sysctrl;    RegBit< 8,8,u32> dispctrl;  RegBit<16,8,u32> status;$/;"	m	union:PPU::regtype	file:
+status	emu/nesemu.cc	/^        RegBit<0,8,u32> sysctrl;    RegBit< 8,8,u32> dispctrl;  RegBit<16,8,u32> status;$/;"	m	union:PPU::regtype	file:
+stop	src/manager/process.cpp	/^void Process::stop() {$/;"	f	class:Process
+stopListening	src/ilistener.cpp	/^void InterruptionListener::stopListening( SSID ssid ) {$/;"	f	class:InterruptionListener
+storage	inc/manager/file.h	/^		Storage &storage;$/;"	m	class:File
+storage	inc/manager/filesystem.h	/^		Storage &storage;$/;"	m	class:FileSystem
+storage	test/filesystem.test.cpp	/^	Storage storage;$/;"	v
+storage	test/storage.test.cpp	/^	Storage storage;$/;"	v
+storage	test/syscalls.test.cpp	/^	Storage storage;$/;"	v
+storage	test/test.cpp	/^	Storage storage;$/;"	v
+storageSize	test/memory.test.cpp	/^	size_t storageSize = &_storage_top - &_storage_base;$/;"	v
+sweep_delay	emu/nativeemu/nativeemu.cpp	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+sweep_delay	emu/nesemu.cc	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+sys	inc/manager/syscalls.h	/^		static System *sys;$/;"	m	class:SysCalls
+sys	src/manager/syscalls.cpp	/^System *SysCalls::sys = 0;$/;"	m	class:SysCalls	file:
+sys	test/syscalls.test.cpp	/^	System sys;$/;"	v
+sys	test/test.cpp	/^	System sys;$/;"	v
+sys_brk	src/posix/brk.cpp	/^void sys_brk( System *sys, Registers &registers ) {$/;"	f
+sys_close	src/posix/close.cpp	/^void sys_close( System *sys, Registers &registers ) {$/;"	f
+sys_default	src/posix/default.cpp	/^void sys_default( System *sys, Registers &registers ) {$/;"	f
+sys_execve	src/posix/execve.cpp	/^void sys_execve( System *sys, Registers &registers ) {$/;"	f
+sys_exit	src/posix/exit.cpp	/^void sys_exit( System *sys, Registers &registers ) {$/;"	f
+sys_fork	src/posix/fork.cpp	/^void sys_fork( System *sys, Registers &registers ) {$/;"	f
+sys_fstat	src/posix/fstat.cpp	/^void sys_fstat( System *sys, Registers &registers ) {$/;"	f
+sys_getpid	src/posix/getpid.cpp	/^void sys_getpid( System *sys, Registers &registers ) {$/;"	f
+sys_gettimeofday	src/posix/gettimeofday.cpp	/^void sys_gettimeofday( System *sys, Registers &registers ) {$/;"	f
+sys_kill	src/posix/kill.cpp	/^void sys_kill( System *sys, Registers &registers ) {$/;"	f
+sys_link	src/posix/link.cpp	/^void sys_link( System *sys, Registers &registers ) {$/;"	f
+sys_lseek	src/posix/lseek.cpp	/^void sys_lseek( System *sys, Registers &registers ) {$/;"	f
+sys_newuname	src/posix/newuname.cpp	/^void sys_newuname( System *sys, Registers &registers ) {$/;"	f
+sys_open	src/posix/open.cpp	/^void sys_open( System *sys, Registers &registers ) {$/;"	f
+sys_read	src/posix/read.cpp	/^void sys_read( System *sys, Registers &registers ) {$/;"	f
+sys_reboot	src/posix/reboot.cpp	/^void sys_reboot( System *sys, Registers &registers ) {$/;"	f
+sys_stat	src/posix/stat.cpp	/^void sys_stat( System *sys, Registers &registers ) {$/;"	f
+sys_times	src/posix/times.cpp	/^void sys_times( System *sys, Registers &registers  ) {$/;"	f
+sys_unlink	src/posix/unlink.cpp	/^void sys_unlink( System *sys, Registers &registers ) {$/;"	f
+sys_wait	src/posix/wait.cpp	/^void sys_wait( System *sys, Registers &registers ) {$/;"	f
+sys_write	src/posix/write.cpp	/^void sys_write( System *sys, Registers &registers ) {$/;"	f
+syscalls	inc/manager/syscalls.h	/^		static tSysCall syscalls[];$/;"	m	class:SysCalls
+syscalls	src/manager/syscalls.cpp	/^SysCalls::tSysCall SysCalls::syscalls[] = {$/;"	m	class:SysCalls	file:
+syscalls	test/syscalls.test.cpp	/^	SysCalls syscalls;$/;"	v
+syscalls	test/test.cpp	/^	SysCalls syscalls;$/;"	v
+sysctrl	emu/nativeemu/nativeemu.cpp	/^        RegBit<0,8,u32> sysctrl;    RegBit< 8,8,u32> dispctrl;  RegBit<16,8,u32> status;$/;"	m	union:PPU::regtype	file:
+sysctrl	emu/nesemu.cc	/^        RegBit<0,8,u32> sysctrl;    RegBit< 8,8,u32> dispctrl;  RegBit<16,8,u32> status;$/;"	m	union:PPU::regtype	file:
+t	emu/nativeemu/nativeemu.cpp	872;"	d	file:
+t	emu/nesemu.cc	858;"	d	file:
+tBlock	inc/manager/memory.h	/^		struct tBlock {$/;"	s	class:Memory
+tBootNode	inc/manager/nfsii.h	/^				tBootNode () : signature( NFS_SIGNATURE ), directory(0),$/;"	f	struct:NFSII::tBootNode
+tBootNode	inc/manager/nfsii.h	/^				tBootNode( lba_t directory, lba_t block0, lba_t freeSize, lba_t size ) : signature( NFS_SIGNATURE ),$/;"	f	struct:NFSII::tBootNode
+tBootNode	inc/manager/nfsii.h	/^			struct tBootNode {$/;"	s	class:NFSII
+tColor	inc/device/video.h	/^		enum tColor {$/;"	g	class:Video
+tMemoryMap	inc/types.h	/^struct tMemoryMap {$/;"	s
+tModuleInfo	inc/types.h	/^struct tModuleInfo {$/;"	s
+tMultibootHeader	inc/types.h	/^struct tMultibootHeader {$/;"	s
+tMultibootInfo	inc/types.h	/^struct tMultibootInfo {$/;"	s
+tNode	inc/manager/nfsii.h	/^				tNode( const char *name, lba_t addr, lba_t parent, NodeType type, uint32_t capacity ) :$/;"	f	struct:NFSII::tNode
+tNode	inc/manager/nfsii.h	/^				tNode() {$/;"	f	struct:NFSII::tNode
+tNode	inc/manager/nfsii.h	/^			struct tNode {$/;"	s	class:NFSII
+tNode	inc/util/dlinkedlist.h	/^			tNode( T data ) : data(data) {$/;"	f	struct:DLinkedList::tNode
+tNode	inc/util/dlinkedlist.h	/^		struct tNode {$/;"	s	class:DLinkedList
+tStorageBlock	inc/manager/nfsii.h	/^				tStorageBlock( lba_t next, lba_t size ) : next(next), size(size) {$/;"	f	struct:NFSII::tStorageBlock
+tStorageBlock	inc/manager/nfsii.h	/^				tStorageBlock() {$/;"	f	struct:NFSII::tStorageBlock
+tStorageBlock	inc/manager/nfsii.h	/^			struct tStorageBlock {$/;"	s	class:NFSII
+tSubNode	inc/manager/nfsii.h	/^				tSubNode( const char *name, lba_t addr ) : addr(addr) {$/;"	f	struct:NFSII::tSubNode
+tSubNode	inc/manager/nfsii.h	/^				tSubNode() {$/;"	f	struct:NFSII::tSubNode
+tSubNode	inc/manager/nfsii.h	/^			struct tSubNode {$/;"	s	class:NFSII
+tSysCall	inc/manager/syscalls.h	/^		typedef void ( *tSysCall )( System* sys, Registers& registers );$/;"	t	class:SysCalls
+tVideoData	inc/device/video.h	/^		struct tVideoData {$/;"	s	class:Video
+test	test/storage.test.cpp	/^	char test = 'A';$/;"	v
+tests	lib/ktest/ktest.cpp	/^KTest* KTest::tests[MAX_NUMBER_OF_TESTS];$/;"	m	class:KTest	file:
+tests	lib/ktest/ktest.h	/^		static KTest* tests[MAX_NUMBER_OF_TESTS];$/;"	m	class:KTest
+tests	test/ktest.cpp	/^KTest* KTest::tests[MAX_NUMBER_OF_TESTS];$/;"	m	class:KTest	file:
+tests	test/ktest.h	/^		static KTest* tests[MAX_NUMBER_OF_TESTS];$/;"	m	class:KTest
+tick	emu/nativeemu/nativeemu.cpp	/^        int tick()$/;"	f	struct:APU::channel
+tick	emu/nativeemu/nativeemu.cpp	/^    void tick() \/\/ Invoked at CPU's rate.$/;"	f	namespace:APU
+tick	emu/nativeemu/nativeemu.cpp	/^    void tick()$/;"	f	namespace:CPU
+tick	emu/nativeemu/nativeemu.cpp	/^    void tick()$/;"	f	namespace:PPU
+tick	emu/nesemu.cc	/^        int tick()$/;"	f	struct:APU::channel
+tick	emu/nesemu.cc	/^    void tick() \/\/ Invoked at CPU's rate.$/;"	f	namespace:APU
+tick	emu/nesemu.cc	/^    void tick()$/;"	f	namespace:CPU
+tick	emu/nesemu.cc	/^    void tick()$/;"	f	namespace:PPU
+tileattr	emu/nativeemu/nativeemu.cpp	/^    u16 tileattr, tilepat, ioaddr;$/;"	m	namespace:PPU	file:
+tileattr	emu/nesemu.cc	/^    u16 tileattr, tilepat, ioaddr;$/;"	m	namespace:PPU	file:
+tilepat	emu/nativeemu/nativeemu.cpp	/^    u16 tileattr, tilepat, ioaddr;$/;"	m	namespace:PPU	file:
+tilepat	emu/nesemu.cc	/^    u16 tileattr, tilepat, ioaddr;$/;"	m	namespace:PPU	file:
+times	src/arch/posix.cpp	/^extern "C" clock_t times( struct tms *buffer ){$/;"	f
+toStoragePageSize	src/manager/nfsii.cpp	/^size_t toStoragePageSize( size_t nbytes ) {$/;"	f
+touch	src/manager/nfsii.cpp	/^bool NFSII::touch( const char *path, size_t size ) {$/;"	f	class:NFSII
+type	inc/manager/nfsii.h	/^				uint8_t type;$/;"	m	struct:NFSII::tNode
+type	inc/types.h	/^	uint32_t type;$/;"	m	struct:tMemoryMap
+u16	emu/nativeemu/nativeemu.cpp	/^typedef uint_least16_t u16;$/;"	t	file:
+u16	emu/nesemu.cc	/^typedef uint_least16_t u16;$/;"	t	file:
+u32	emu/nativeemu/nativeemu.cpp	/^typedef uint_least32_t u32;$/;"	t	file:
+u32	emu/nesemu.cc	/^typedef uint_least32_t u32;$/;"	t	file:
+u8	emu/nativeemu/nativeemu.cpp	/^typedef uint_least8_t   u8;$/;"	t	file:
+u8	emu/nesemu.cc	/^typedef uint_least8_t   u8;$/;"	t	file:
+uintr_t	inc/registers.h	/^	typedef uint32_t uintr_t;$/;"	t
+uninstall	src/manager/system.cpp	/^void System::uninstall( Device &device ) {$/;"	f	class:System
+unlink	src/arch/posix.cpp	/^extern "C" int unlink( char *path ){$/;"	f
+update	src/device/video.cpp	/^void Video::update() {$/;"	f	class:Video
+upperMemory	inc/types.h	/^	const uint32_t upperMemory;$/;"	m	struct:tMultibootInfo
+vaddr	emu/nativeemu/nativeemu.cpp	/^    } scroll, vaddr;$/;"	m	namespace:PPU	typeref:union:PPU::scrolltype	file:
+vaddr	emu/nesemu.cc	/^    } scroll, vaddr;$/;"	m	namespace:PPU	typeref:union:PPU::scrolltype	file:
+vaddrhi	emu/nativeemu/nativeemu.cpp	/^        RegBit<11,8,u32> vaddrhi;   \/\/ first write to 2006 (with high 2 bits set to zero)$/;"	m	union:PPU::scrolltype	file:
+vaddrhi	emu/nesemu.cc	/^        RegBit<11,8,u32> vaddrhi;   \/\/ first write to 2006 (with high 2 bits set to zero)$/;"	m	union:PPU::scrolltype	file:
+vaddrlo	emu/nativeemu/nativeemu.cpp	/^        RegBit<3, 8,u32> vaddrlo;   \/\/ second write to 2006$/;"	m	union:PPU::scrolltype	file:
+vaddrlo	emu/nesemu.cc	/^        RegBit<3, 8,u32> vaddrlo;   \/\/ second write to 2006$/;"	m	union:PPU::scrolltype	file:
+value	emu/nativeemu/nativeemu.cpp	/^        u32 value;$/;"	m	union:PPU::regtype	file:
+value	emu/nesemu.cc	/^        u32 value;$/;"	m	union:PPU::regtype	file:
+value	inc/device/video.h	/^			char value;$/;"	m	struct:Video::tVideoData
+vbeControlInfo	inc/types.h	/^	const uint32_t vbeControlInfo;$/;"	m	struct:tMultibootInfo
+vbeInterfaceLen	inc/types.h	/^	const uint16_t vbeInterfaceLen;$/;"	m	struct:tMultibootInfo
+vbeInterfaceOff	inc/types.h	/^	const uint16_t vbeInterfaceOff;$/;"	m	struct:tMultibootInfo
+vbeInterfaceSeg	inc/types.h	/^	const uint16_t vbeInterfaceSeg;$/;"	m	struct:tMultibootInfo
+vbeMode	inc/types.h	/^	const uint16_t vbeMode;$/;"	m	struct:tMultibootInfo
+vbeModeInfo	inc/types.h	/^	const uint32_t vbeModeInfo;$/;"	m	struct:tMultibootInfo
+vbeafVersion	inc/device/vesa.h	/^	uint16_t vbeafVersion;$/;"	m	struct:VBEInfo
+vendorNamePtr	inc/device/vesa.h	/^	uint32_t vendorNamePtr;$/;"	m	struct:VBEInfo
+version	inc/device/vesa.h	/^	uint16_t version;$/;"	m	struct:VBEInfo
+videoBuffer	inc/device/vesa.h	/^	uint32_t videoBuffer;$/;"	m	struct:VBEMode
+vmode	inc/device/vesa.h	/^	VBEMode vmode;$/;"	m	class:Vesa
+wait	src/arch/posix.cpp	/^extern "C" int wait( int *status ) {$/;"	f
+warning	inc/util/debug.h	35;"	d
+warning	inc/util/debug.h	47;"	d
+wave_counter	emu/nativeemu/nativeemu.cpp	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+wave_counter	emu/nesemu.cc	/^        int sweep_delay, env_delay, wave_counter, hold, phase, level;$/;"	m	struct:APU::channel	file:
+width	inc/device/vesa.h	/^	uint16_t width;$/;"	m	struct:VBEMode
+width	inc/device/vesa.h	/^	unsigned short width;$/;"	m	class:Vesa
+width	inc/device/vesa.h	/^	unsigned short width;$/;"	m	struct:VesaMode
+widthChar	inc/device/vesa.h	/^	uint8_t widthChar;       \/\/ Width of character cell in pixels$/;"	m	struct:VBEMode
+winA	inc/device/vesa.h	/^	uint8_t  winA;           \/\/ Window attributes A$/;"	m	struct:VBEMode
+winB	inc/device/vesa.h	/^	uint8_t  winB;           \/\/ Window attributes B$/;"	m	struct:VBEMode
+winSize	inc/device/vesa.h	/^	uint16_t winSize;        \/\/ Window size in KB$/;"	m	struct:VBEMode
+wrap	emu/nativeemu/nativeemu.cpp	/^    u16 wrap(u16 oldaddr, u16 newaddr)  { return (oldaddr & 0xFF00) + u8(newaddr); }$/;"	f	namespace:CPU
+wrap	emu/nesemu.cc	/^    u16 wrap(u16 oldaddr, u16 newaddr)  { return (oldaddr & 0xFF00) + u8(newaddr); }$/;"	f	namespace:CPU
+write	inc/device/vesa.h	/^	size_t write( const char* src, size_t size ) {$/;"	f	class:Vesa
+write	inc/device/vesa.h	/^	void write( const char value ) {$/;"	f	class:Vesa
+write	src/arch/posix.cpp	/^extern "C" int write( int fd, char *buffer, int len ) {$/;"	f
+write	src/device/outputdevice.cpp	/^size_t OutputDevice::write( const char* buffer, size_t size ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( const bool value ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( const char value ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( const char* str ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( const void* addr, uint8_t base ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( int16_t value, uint8_t base ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( int32_t value, uint8_t base ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( int64_t value, uint8_t base ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( int8_t value, uint8_t base ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( uint16_t value, uint8_t base ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( uint32_t value, uint8_t base ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( uint64_t value, uint8_t base ) {$/;"	f	class:OutputDevice
+write	src/device/outputdevice.cpp	/^void OutputDevice::write( uint8_t value, uint8_t base ) {$/;"	f	class:OutputDevice
+write	src/device/storage.cpp	/^size_t Storage::write( const char* src, size_t size ) {$/;"	f	class:Storage
+write	src/device/storage.cpp	/^void Storage::write( const char src ) {$/;"	f	class:Storage
+write	src/device/uart.cpp	/^void UART::write( const char value ) {$/;"	f	class:UART
+write	src/device/video.cpp	/^void Video::write( const char value ) {$/;"	f	class:Video
+write	src/manager/filesystem.cpp	/^size_t FileSystem::write( fid_t fd, const char* src, size_t size ) {$/;"	f	class:FileSystem
+writeln	inc/device/outputdevice.h	/^	template <typename T> void OutputDevice::writeln( T value ) {$/;"	f	class:OutputDevice
+writeln	inc/device/outputdevice.h	/^	template <typename T> void OutputDevice::writeln( T value, uint8_t base ) {$/;"	f	class:OutputDevice
+writeln	src/device/outputdevice.cpp	/^void OutputDevice::writeln() {$/;"	f	class:OutputDevice
+x	emu/nativeemu/nativeemu.cpp	/^    int scanline=241, x=0, scanline_end=341, VBlankState=0, cycle_counter=0;$/;"	m	namespace:PPU	file:
+x	emu/nativeemu/nativeemu.cpp	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+x	emu/nesemu.cc	/^    int scanline=241, x=0, scanline_end=341, VBlankState=0, cycle_counter=0;$/;"	m	namespace:PPU	file:
+x	emu/nesemu.cc	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+xcoarse	emu/nativeemu/nativeemu.cpp	/^        RegBit<3, 5,u32> xcoarse;   \/\/ high 5 bits of first write to 2005$/;"	m	union:PPU::scrolltype	file:
+xcoarse	emu/nesemu.cc	/^        RegBit<3, 5,u32> xcoarse;   \/\/ high 5 bits of first write to 2005$/;"	m	union:PPU::scrolltype	file:
+xfine	emu/nativeemu/nativeemu.cpp	/^        RegBit<0, 3,u32> xfine;     \/\/ low 3 bits of first write to 2005$/;"	m	union:PPU::scrolltype	file:
+xfine	emu/nesemu.cc	/^        RegBit<0, 3,u32> xfine;     \/\/ low 3 bits of first write to 2005$/;"	m	union:PPU::scrolltype	file:
+xscroll	emu/nativeemu/nativeemu.cpp	/^        RegBit<0, 8,u32> xscroll;   \/\/ low 8 bits of first write to 2005$/;"	m	union:PPU::scrolltype	file:
+xscroll	emu/nesemu.cc	/^        RegBit<0, 8,u32> xscroll;   \/\/ low 8 bits of first write to 2005$/;"	m	union:PPU::scrolltype	file:
+y	emu/nativeemu/nativeemu.cpp	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+y	emu/nesemu.cc	/^    struct { u8 sprindex, y, index, attr, x; u16 pattern; } OAM2[8], OAM3[8];$/;"	m	struct:PPU::__anon2	file:
+ycoarse	emu/nativeemu/nativeemu.cpp	/^        RegBit<8, 5,u32> ycoarse;   \/\/ high 5 bits of second write to 2005$/;"	m	union:PPU::scrolltype	file:
+ycoarse	emu/nesemu.cc	/^        RegBit<8, 5,u32> ycoarse;   \/\/ high 5 bits of second write to 2005$/;"	m	union:PPU::scrolltype	file:
+yfine	emu/nativeemu/nativeemu.cpp	/^        RegBit<15,3,u32> yfine;     \/\/ low 3 bits of second write to 2005$/;"	m	union:PPU::scrolltype	file:
+yfine	emu/nesemu.cc	/^        RegBit<15,3,u32> yfine;     \/\/ low 3 bits of second write to 2005$/;"	m	union:PPU::scrolltype	file:
+~DLinkedList	inc/util/dlinkedlist.h	/^		~DLinkedList() {$/;"	f	class:DLinkedList
+~File	inc/manager/file.h	/^		~File() {$/;"	f	class:File
+~FileSystem	src/manager/filesystem.cpp	/^FileSystem::~FileSystem() {$/;"	f	class:FileSystem
+~FileTable	inc/manager/file.h	/^		~FileTable() {$/;"	f	class:FileTable
+~NFSII	src/manager/nfsii.cpp	/^NFSII::~NFSII() {$/;"	f	class:NFSII
+~Process	src/manager/process.cpp	/^Process::~Process() {$/;"	f	class:Process
+~Scheduler	src/manager/scheduler.cpp	/^Scheduler::~Scheduler() {$/;"	f	class:Scheduler
+~Storage	src/device/storage.cpp	/^Storage::~Storage() {$/;"	f	class:Storage
+~UART	src/device/uart.cpp	/^UART::~UART() {$/;"	f	class:UART
