@@ -61,6 +61,3 @@ make run
 Turning an x86 computer into a Nintendo 8-bits.
 
 [![](https://i.ytimg.com/vi/jj--cF3suvU/3.jpg?time=1441224313074)](https://www.youtube.com/embed/jj--cF3suvU)
-
-### Documentation
-coming soon...
